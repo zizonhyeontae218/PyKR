@@ -19,6 +19,11 @@ classifiers = [
   "Operating System :: OS Independent",
 ]
 
+[project.urls]
+Homepage = "https://github.com/zizonhyeontae218/PyKR"
+Repository = "https://github.com/zizonhyeontae218/PyKR.git"
+Issues = "https://github.com/zizonhyeontae218/PyKR/issues"
+
 [project.scripts]
 pykr = "pykr:main"
 

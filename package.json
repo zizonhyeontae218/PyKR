@@ -5,6 +5,14 @@
   "version": "1.0.0",
   "publisher": "HT08",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zizonhyeontae218/PyKR.git"
+  },
+  "homepage": "https://github.com/zizonhyeontae218/PyKR#readme",
+  "bugs": {
+    "url": "https://github.com/zizonhyeontae218/PyKR/issues"
+  },
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -36,7 +44,7 @@
     "test": "python -X utf8 -m unittest discover -s tests",
     "test:vscode": "node VSCodeExtension/run-integration-test.js",
     "benchmark": "python -X utf8 benchmarks/benchmark.py",
-    "package:vsix": "npx @vscode/vsce package --no-dependencies --allow-missing-repository --no-rewrite-relative-links"
+    "package:vsix": "npx @vscode/vsce package --no-dependencies --no-rewrite-relative-links"
   },
   "contributes": {
     "languages": [

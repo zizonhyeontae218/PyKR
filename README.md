@@ -207,4 +207,4 @@ npm run package:vsix
 - 릴리스 변경점은 [CHANGELOG.md](CHANGELOG.md)에 기록합니다.
 - PyKR은 [MIT License](LICENSE)로 공개됩니다.
 
-현재 폴더에는 원격 저장소 URL이 설정되어 있지 않습니다. GitHub 저장소와 PyPI·VS Marketplace 게시가 완료되면 패키지 메타데이터에 실제 URL과 배포 배지를 추가할 수 있습니다.
+GitHub 저장소: [zizonhyeontae218/PyKR](https://github.com/zizonhyeontae218/PyKR)

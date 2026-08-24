@@ -18,7 +18,7 @@
     "LICENSE": "26bcfb96939bd61ca18844fba89264cf51d51771c8d396b445b7a2c74ebbadef",
     "Printer/__init__.py": "0304b0d3eab1612bb93b23be45c813c892c17a2b652d4142aa37de26748a87fe",
     "Printer/printer.py": "f667425644e7a9bd5b3e7eb4859a184f57f1f955dc745a138fa606fb934c3cb2",
-    "README.md": "887072a994e9bc967c5886bd4edb0b1fa336893e70e6137ddd511c643e335b56",
+    "README.md": "5775462025dd080515249e3d13a07e1dde10ce6b2ea8899a9ae829ffc433f89b",
     "SECURITY.md": "af4e48c188c66afad5cdb736437b227837d56e5c5f35549cfd982ccb48588499",
     "VSCodeExtension/bridge.py": "2f699718b7f6fcf517f0aa93bae02cacb5c950aa8a73d05e997aad8e596aad6e",
     "VSCodeExtension/extension.js": "a98ab8ccc3dd74c48af2fb2d978f941a778e985aebc02a2c0bf6646f9b21d652",
@@ -30,9 +30,9 @@
     "benchmarks/benchmark.py": "9d4c844dffa6216a9dbc7192afb6bc730940580aa74c6badd7bdd22b72a8baa8",
     "docs/vscode-extension.md": "e44f12797eaf8e997e243bb7a5f1b17e7ee11dce80ef73d2cbeda19311020867",
     "package-lock.json": "ec4d3a2ad61c603ba46d1109702cd5072d142f33f18a394dfd410777b1f68b83",
-    "package.json": "9b59f822a55128b3cc1fa87e14f9926c6e74133cfb5f8713c822a7869dd116ca",
+    "package.json": "ba47a30776e10e3914b0c13336c591340d48618d065a4c34efbac4c596865ac5",
     "pykr.py": "1191205c5b86a77e7463975ab3013ac0eb3d081d16be0f8e35daab76991c46cf",
-    "pyproject.toml": "0c3d66e887a9ceecf7539a796f1f8137df4305b6889d305d790390c64d75c6fc",
+    "pyproject.toml": "170eea9f47968c4f16ef348c73f9443a7639df471bcb2840829fb006fe96ed60",
     "tests/test_pykr.py": "7e50d6335759e100435559896cdf2a0b4975e0037e7377869dd6678dab8d0631"
   }
 }
