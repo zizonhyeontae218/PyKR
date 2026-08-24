@@ -31,6 +31,13 @@ EXIT_EXECUTION = 5
 EXIT_IO = 6
 
 
+def _configure_standard_streams() -> None:
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        if reconfigure is not None:
+            reconfigure(encoding="utf-8")
+
+
 def _extension_dirs(values: list[str] | None) -> list[Path]:
     return (
         [Path(value).expanduser() for value in values]
@@ -164,6 +171,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: list[str] | None = None) -> int:
+    _configure_standard_streams()
     args = build_parser().parse_args(argv)
     try:
         return args.handler(args)

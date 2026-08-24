@@ -22,6 +22,19 @@ async function open(file) {
   return document;
 }
 
+async function type(document, text, expected) {
+  const changed = new Promise((resolve) => {
+    const subscription = vscode.workspace.onDidChangeTextDocument((event) => {
+      if (event.document !== document) return;
+      subscription.dispose();
+      resolve();
+    });
+  });
+  await vscode.commands.executeCommand("type", { text });
+  await changed;
+  await waitFor(() => document.getText() === expected, 2000);
+}
+
 async function run() {
   const directory = await fs.mkdtemp(path.join(os.tmpdir(), "pykr-vscode-"));
   const dictionary = path.join(directory, "profile", "GenderChange.Json");
@@ -53,13 +66,13 @@ async function run() {
     await fs.writeFile(quoteFile, "", "utf8");
     const quoteDocument = await open(quoteFile);
     assert.strictEqual(quoteDocument.languageId, "kpy");
-    await vscode.commands.executeCommand("type", { text: '"' });
+    await type(quoteDocument, '"', '""');
     assert.strictEqual(quoteDocument.getText(), '""', "쌍따옴표 자동 닫기 실패");
 
     const bracketFile = path.join(directory, "brackets.kpy");
     await fs.writeFile(bracketFile, "", "utf8");
     const bracketDocument = await open(bracketFile);
-    await vscode.commands.executeCommand("type", { text: "(" });
+    await type(bracketDocument, "(", "()");
     assert.strictEqual(bracketDocument.getText(), "()", "괄호 자동 닫기 실패");
 
     const brokenFile = path.join(directory, "broken.kpy");

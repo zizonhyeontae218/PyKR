@@ -4,6 +4,8 @@ import ast
 import copy
 import io
 import json
+import os
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -196,6 +198,24 @@ class PyKRTests(unittest.TestCase):
                     pykr.main(["to-kpy", str(source), "--overwrite"]),
                     0,
                 )
+
+    def test_cli_uses_utf8_when_environment_encoding_cannot_write_korean(self) -> None:
+        environment = os.environ.copy()
+        environment["PYTHONIOENCODING"] = "cp1252"
+        result = subprocess.run(
+            [
+                sys.executable,
+                str(ROOT / "pykr.py"),
+                "check",
+                str(ROOT / "GenderChange.Json"),
+            ],
+            cwd=ROOT,
+            env=environment,
+            capture_output=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr.decode(errors="replace"))
+        self.assertIn("정상:".encode(), result.stdout)
 
     def test_run_executes_and_cleans_up(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

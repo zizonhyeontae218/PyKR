@@ -23,7 +23,7 @@
     "VSCodeExtension/bridge.py": "2f699718b7f6fcf517f0aa93bae02cacb5c950aa8a73d05e997aad8e596aad6e",
     "VSCodeExtension/extension.js": "a98ab8ccc3dd74c48af2fb2d978f941a778e985aebc02a2c0bf6646f9b21d652",
     "VSCodeExtension/gender-change.schema.json": "f74c376011bad17c0a60b654f030c409bf7690ae727c4f9fc0a249578ad8bd18",
-    "VSCodeExtension/integration-test.js": "43310ceeb47a46be08ddfe02e566b45a417214e5a4f263703cae30aac0a77d9a",
+    "VSCodeExtension/integration-test.js": "5d465b4b37424807299505eaa707ce4c1567ebd8d4030b2e08299101ed738012",
     "VSCodeExtension/kpy.tmLanguage.json": "263d2b5b925e40cfa93a14df399aef175cde116c31856543e4448e59128eb4b2",
     "VSCodeExtension/language-configuration.json": "54145db8e673c6799b838f8f85f27962e1cb5d2653103224ee4e2a6b84febdf8",
     "VSCodeExtension/run-integration-test.js": "2a79de8649f32f6ec9686cc174a0231298ee45073001fd7e908101d5479135e2",
@@ -31,8 +31,8 @@
     "docs/vscode-extension.md": "e44f12797eaf8e997e243bb7a5f1b17e7ee11dce80ef73d2cbeda19311020867",
     "package-lock.json": "ec4d3a2ad61c603ba46d1109702cd5072d142f33f18a394dfd410777b1f68b83",
     "package.json": "ba47a30776e10e3914b0c13336c591340d48618d065a4c34efbac4c596865ac5",
-    "pykr.py": "1191205c5b86a77e7463975ab3013ac0eb3d081d16be0f8e35daab76991c46cf",
+    "pykr.py": "6b9098bc5852a368ad54d21dba466175f357c654fe271d40c13d50cbc28b93be",
     "pyproject.toml": "170eea9f47968c4f16ef348c73f9443a7639df471bcb2840829fb006fe96ed60",
-    "tests/test_pykr.py": "7e50d6335759e100435559896cdf2a0b4975e0037e7377869dd6678dab8d0631"
+    "tests/test_pykr.py": "e93a6cf75dfb1ccd9a4be908f93a3cce25b7ac3f443d4e1b98567b4e6f3d9a2b"
   }
 }
