@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PyKR GenderChange",
+  "type": "object",
+  "required": ["schemaVersion", "profile", "syntax", "translation"],
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "profile": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    },
+    "syntax": {
+      "type": "object",
+      "required": ["sourceExtension", "targetExtension", "variablePrefix", "variablePrefixMode"],
+      "properties": {
+        "sourceExtension": { "const": ".kpy" },
+        "targetExtension": { "const": ".py" },
+        "variablePrefix": { "const": "?" },
+        "variablePrefixMode": { "const": "required" }
+      },
+      "additionalProperties": false
+    },
+    "translation": {
+      "type": "object",
+      "required": [
+        "keywords",
+        "softKeywords",
+        "constants",
+        "builtinFunctions",
+        "builtinTypes",
+        "exceptions",
+        "commonMethods",
+        "commonParameters"
+      ],
+      "additionalProperties": {
+        "$ref": "#/$defs/group"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "group": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/entry"
+      }
+    },
+    "entry": {
+      "type": "object",
+      "required": ["primary", "aliases"],
+      "properties": {
+        "primary": { "type": "string", "minLength": 1 },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

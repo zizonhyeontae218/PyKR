@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "PyKR",
+  "scopeName": "source.kpy",
+  "patterns": [
+    {
+      "name": "variable.other.readwrite.kpy",
+      "match": "\\?[\\p{L}_][\\p{L}\\p{N}_]*"
+    },
+    {
+      "name": "support.function.builtin.kpy",
+      "match": "(?<![\\p{L}\\p{N}_?])[\\p{L}_][\\p{L}\\p{N}_]*(?=\\s*\\()"
+    },
+    {
+      "include": "source.python"
+    }
+  ]
+}

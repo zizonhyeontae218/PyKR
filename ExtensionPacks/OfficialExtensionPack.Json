@@ -1,0 +1,1812 @@
+{
+  "schemaVersion": 1,
+  "_note": "PyKR 공식 라이브러리 확장팩. 기존 사전의 번역체에 맞춘 기본 한국어 번역어를 포함한다.",
+  "pack": {
+    "id": "pykr.official",
+    "name": "PyKR 공식 확장팩",
+    "version": "0.1.0",
+    "language": "ko-KR",
+    "allowPersonalOverride": true
+  },
+  "resolution": {
+    "trackImportAliases": true,
+    "translateByCanonicalPath": true,
+    "example": {
+      "import": "import pandas as pd",
+      "canonical": "pandas.DataFrame",
+      "sourceUsage": "pd.DataFrame"
+    }
+  },
+  "modules": {
+    "standardLibrary": {
+      "sys": {
+        "commonAliases": [],
+        "members": {
+          "sys.argv": {
+            "primary": "명령줄인자",
+            "aliases": [
+              "ㅁㄹㅈㅇㅈ"
+            ]
+          },
+          "sys.path": {
+            "primary": "경로목록",
+            "aliases": [
+              "경로s",
+              "ㄱㄹㅁㄹ"
+            ]
+          },
+          "sys.exit": {
+            "primary": "종료",
+            "aliases": [
+              "끝",
+              "ㅈㄹ"
+            ]
+          },
+          "sys.version": {
+            "primary": "버전",
+            "aliases": [
+              "ㅂㅈ"
+            ]
+          },
+          "sys.version_info": {
+            "primary": "버전정보",
+            "aliases": [
+              "ㅂㅈㅈㅂ"
+            ]
+          },
+          "sys.platform": {
+            "primary": "플랫폼",
+            "aliases": [
+              "ㅍㄹㅍ"
+            ]
+          },
+          "sys.modules": {
+            "primary": "모듈목록",
+            "aliases": [
+              "모듈s",
+              "ㅁㄷㅁㄹ"
+            ]
+          },
+          "sys.stdin": {
+            "primary": "표준입력",
+            "aliases": [
+              "ㅍㅈㅇㄹ"
+            ]
+          },
+          "sys.stdout": {
+            "primary": "표준출력",
+            "aliases": [
+              "ㅍㅈㅊㄹ"
+            ]
+          },
+          "sys.stderr": {
+            "primary": "오류출력",
+            "aliases": [
+              "ㅇㄹㅊㄹ"
+            ]
+          },
+          "sys.getsizeof": {
+            "primary": "메모리크기가져오기",
+            "aliases": [
+              "메모리크기가져와",
+              "ㅁㅁㄹㅋㄱㄱㅈㅇㄱ"
+            ]
+          },
+          "sys.getrecursionlimit": {
+            "primary": "재귀한도가져오기",
+            "aliases": [
+              "재귀한도가져와",
+              "ㅈㄱㅎㄷㄱㅈㅇㄱ"
+            ]
+          },
+          "sys.setrecursionlimit": {
+            "primary": "재귀한도설정",
+            "aliases": [
+              "재귀한도세팅",
+              "ㅈㄱㅎㄷㅅㅈ"
+            ]
+          }
+        }
+      },
+      "os": {
+        "commonAliases": [],
+        "members": {
+          "os.getcwd": {
+            "primary": "현재디렉토리",
+            "aliases": [
+              "ㅎㅈㄷㄹㅌㄹ"
+            ]
+          },
+          "os.chdir": {
+            "primary": "디렉토리변경",
+            "aliases": [
+              "디렉토리바꾸기",
+              "ㄷㄹㅌㄹㅂㄱ"
+            ]
+          },
+          "os.listdir": {
+            "primary": "디렉토리목록",
+            "aliases": [
+              "디렉토리s",
+              "ㄷㄹㅌㄹㅁㄹ"
+            ]
+          },
+          "os.mkdir": {
+            "primary": "디렉토리만들기",
+            "aliases": [
+              "디렉토리만들어",
+              "ㄷㄹㅌㄹㅁㄷㄱ"
+            ]
+          },
+          "os.makedirs": {
+            "primary": "디렉토리들만들기",
+            "aliases": [
+              "디렉토리들만들어",
+              "ㄷㄹㅌㄹㄷㅁㄷㄱ"
+            ]
+          },
+          "os.remove": {
+            "primary": "제거",
+            "aliases": [
+              "ㅈㄱ"
+            ]
+          },
+          "os.rename": {
+            "primary": "이름변경",
+            "aliases": [
+              "이름바꾸기",
+              "ㅇㄹㅂㄱ"
+            ]
+          },
+          "os.replace": {
+            "primary": "교체",
+            "aliases": [
+              "ㄱㅊ"
+            ]
+          },
+          "os.environ": {
+            "primary": "환경변수",
+            "aliases": [
+              "ㅎㄱㅂㅅ"
+            ]
+          },
+          "os.name": {
+            "primary": "이름",
+            "aliases": [
+              "ㅇㄹ"
+            ]
+          },
+          "os.system": {
+            "primary": "시스템명령",
+            "aliases": [
+              "ㅅㅅㅌㅁㄹ"
+            ]
+          },
+          "os.walk": {
+            "primary": "디렉토리순회",
+            "aliases": [
+              "ㄷㄹㅌㄹㅅㅎ"
+            ]
+          },
+          "os.path.join": {
+            "primary": "경로결합",
+            "aliases": [
+              "ㄱㄹㄱㅎ"
+            ]
+          },
+          "os.path.exists": {
+            "primary": "존재확인",
+            "aliases": [
+              "존재체크",
+              "ㅈㅈㅎㅇ"
+            ]
+          },
+          "os.path.isfile": {
+            "primary": "파일확인",
+            "aliases": [
+              "파일체크",
+              "ㅍㅇㅎㅇ"
+            ]
+          },
+          "os.path.isdir": {
+            "primary": "디렉토리확인",
+            "aliases": [
+              "디렉토리체크",
+              "ㄷㄹㅌㄹㅎㅇ"
+            ]
+          },
+          "os.path.abspath": {
+            "primary": "절대경로",
+            "aliases": [
+              "ㅈㄷㄱㄹ"
+            ]
+          },
+          "os.path.dirname": {
+            "primary": "디렉토리이름",
+            "aliases": [
+              "ㄷㄹㅌㄹㅇㄹ"
+            ]
+          },
+          "os.path.basename": {
+            "primary": "기본이름",
+            "aliases": [
+              "ㄱㅂㅇㄹ"
+            ]
+          },
+          "os.path.splitext": {
+            "primary": "확장자나누기",
+            "aliases": [
+              "확장자나눠",
+              "ㅎㅈㅈㄴㄴㄱ"
+            ]
+          },
+          "os.path.getsize": {
+            "primary": "크기가져오기",
+            "aliases": [
+              "크기가져와",
+              "ㅋㄱㄱㅈㅇㄱ"
+            ]
+          }
+        }
+      },
+      "json": {
+        "commonAliases": [],
+        "members": {
+          "json.load": {
+            "primary": "제이슨불러오기",
+            "aliases": [
+              "제이슨불러와",
+              "ㅈㅇㅅㅂㄹㅇㄱ"
+            ]
+          },
+          "json.loads": {
+            "primary": "문자열읽기",
+            "aliases": [
+              "문자열읽어",
+              "ㅁㅈㅇㅇㄱ"
+            ]
+          },
+          "json.dump": {
+            "primary": "제이슨저장",
+            "aliases": [
+              "제이슨세이브",
+              "ㅈㅇㅅㅈㅈ"
+            ]
+          },
+          "json.dumps": {
+            "primary": "제이슨문자열로",
+            "aliases": [
+              "ㅈㅇㅅㅁㅈㅇㄹ"
+            ]
+          },
+          "json.JSONDecodeError": {
+            "primary": "제이슨해독오류",
+            "aliases": [
+              "제이슨해독에러",
+              "ㅈㅇㅅㅎㄷㅇㄹ"
+            ]
+          },
+          "json.JSONEncoder": {
+            "primary": "제이슨부호화기",
+            "aliases": [
+              "ㅈㅇㅅㅂㅎㅎㄱ"
+            ]
+          },
+          "json.JSONDecoder": {
+            "primary": "제이슨해독기",
+            "aliases": [
+              "ㅈㅇㅅㅎㄷㄱ"
+            ]
+          }
+        }
+      },
+      "math": {
+        "commonAliases": [],
+        "members": {
+          "math.pi": {
+            "primary": "원주율",
+            "aliases": [
+              "ㅇㅈㅇ"
+            ]
+          },
+          "math.e": {
+            "primary": "자연상수",
+            "aliases": [
+              "ㅈㅇㅅㅅ"
+            ]
+          },
+          "math.tau": {
+            "primary": "타우",
+            "aliases": [
+              "ㅌㅇ"
+            ]
+          },
+          "math.inf": {
+            "primary": "무한대",
+            "aliases": [
+              "ㅁㅎㄷ"
+            ]
+          },
+          "math.nan": {
+            "primary": "숫자아님",
+            "aliases": [
+              "ㅅㅈㅇㄴ"
+            ]
+          },
+          "math.sqrt": {
+            "primary": "제곱근",
+            "aliases": [
+              "ㅈㄱㄱ"
+            ]
+          },
+          "math.pow": {
+            "primary": "거듭제곱",
+            "aliases": [
+              "ㄱㄷㅈㄱ"
+            ]
+          },
+          "math.exp": {
+            "primary": "지수",
+            "aliases": [
+              "ㅈㅅ"
+            ]
+          },
+          "math.log": {
+            "primary": "로그",
+            "aliases": [
+              "ㄹㄱ"
+            ]
+          },
+          "math.log10": {
+            "primary": "상용로그",
+            "aliases": [
+              "ㅅㅇㄹㄱ"
+            ]
+          },
+          "math.sin": {
+            "primary": "사인",
+            "aliases": [
+              "ㅅㅇ"
+            ]
+          },
+          "math.cos": {
+            "primary": "코사인",
+            "aliases": [
+              "ㅋㅅㅇ"
+            ]
+          },
+          "math.tan": {
+            "primary": "탄젠트",
+            "aliases": [
+              "ㅌㅈㅌ"
+            ]
+          },
+          "math.asin": {
+            "primary": "아크사인",
+            "aliases": [
+              "ㅇㅋㅅㅇ"
+            ]
+          },
+          "math.acos": {
+            "primary": "아크코사인",
+            "aliases": [
+              "ㅇㅋㅋㅅㅇ"
+            ]
+          },
+          "math.atan": {
+            "primary": "아크탄젠트",
+            "aliases": [
+              "ㅇㅋㅌㅈㅌ"
+            ]
+          },
+          "math.atan2": {
+            "primary": "아크탄젠트둘",
+            "aliases": [
+              "ㅇㅋㅌㅈㅌㄷ"
+            ]
+          },
+          "math.floor": {
+            "primary": "내림",
+            "aliases": [
+              "ㄴㄹ"
+            ]
+          },
+          "math.ceil": {
+            "primary": "올림",
+            "aliases": [
+              "ㅇㄹ"
+            ]
+          },
+          "math.trunc": {
+            "primary": "버림",
+            "aliases": [
+              "ㅂㄹ"
+            ]
+          },
+          "math.fabs": {
+            "primary": "실수절댓값",
+            "aliases": [
+              "ㅅㅅㅈㄷㄱ"
+            ]
+          },
+          "math.factorial": {
+            "primary": "팩토리얼",
+            "aliases": [
+              "ㅍㅌㄹㅇ"
+            ]
+          },
+          "math.gcd": {
+            "primary": "최대공약수",
+            "aliases": [
+              "ㅊㄷㄱㅇㅅ"
+            ]
+          },
+          "math.lcm": {
+            "primary": "최소공배수",
+            "aliases": [
+              "ㅊㅅㄱㅂㅅ"
+            ]
+          },
+          "math.isclose": {
+            "primary": "근접확인",
+            "aliases": [
+              "근접체크",
+              "ㄱㅈㅎㅇ"
+            ]
+          }
+        }
+      },
+      "random": {
+        "commonAliases": [],
+        "members": {
+          "random.seed": {
+            "primary": "시드설정",
+            "aliases": [
+              "시드세팅",
+              "ㅅㄷㅅㅈ"
+            ]
+          },
+          "random.random": {
+            "primary": "무작위실수",
+            "aliases": [
+              "ㅁㅈㅇㅅㅅ"
+            ]
+          },
+          "random.randint": {
+            "primary": "무작위정수",
+            "aliases": [
+              "ㅁㅈㅇㅈㅅ"
+            ]
+          },
+          "random.randrange": {
+            "primary": "범위난수",
+            "aliases": [
+              "ㅂㅇㄴㅅ"
+            ]
+          },
+          "random.uniform": {
+            "primary": "균등분포",
+            "aliases": [
+              "ㄱㄷㅂㅍ"
+            ]
+          },
+          "random.choice": {
+            "primary": "선택",
+            "aliases": [
+              "ㅅㅌ"
+            ]
+          },
+          "random.choices": {
+            "primary": "다중선택",
+            "aliases": [
+              "ㄷㅈㅅㅌ"
+            ]
+          },
+          "random.sample": {
+            "primary": "표본추출",
+            "aliases": [
+              "ㅍㅂㅊㅊ"
+            ]
+          },
+          "random.shuffle": {
+            "primary": "섞기",
+            "aliases": [
+              "ㅅㄱ"
+            ]
+          }
+        }
+      },
+      "pathlib": {
+        "commonAliases": [],
+        "members": {
+          "pathlib.Path": {
+            "primary": "경로",
+            "aliases": [
+              "ㄱㄹ"
+            ]
+          },
+          "pathlib.PurePath": {
+            "primary": "순수경로",
+            "aliases": [
+              "ㅅㅅㄱㄹ"
+            ]
+          },
+          "pathlib.Path.exists": {
+            "primary": "존재확인",
+            "aliases": [
+              "존재체크",
+              "ㅈㅈㅎㅇ"
+            ]
+          },
+          "pathlib.Path.is_file": {
+            "primary": "파일확인",
+            "aliases": [
+              "파일체크",
+              "ㅍㅇㅎㅇ"
+            ]
+          },
+          "pathlib.Path.is_dir": {
+            "primary": "디렉토리확인",
+            "aliases": [
+              "디렉토리체크",
+              "ㄷㄹㅌㄹㅎㅇ"
+            ]
+          },
+          "pathlib.Path.mkdir": {
+            "primary": "디렉토리만들기",
+            "aliases": [
+              "디렉토리만들어",
+              "ㄷㄹㅌㄹㅁㄷㄱ"
+            ]
+          },
+          "pathlib.Path.iterdir": {
+            "primary": "디렉토리순회",
+            "aliases": [
+              "ㄷㄹㅌㄹㅅㅎ"
+            ]
+          },
+          "pathlib.Path.glob": {
+            "primary": "패턴찾기",
+            "aliases": [
+              "패턴찾아",
+              "ㅍㅌㅊㄱ"
+            ]
+          },
+          "pathlib.Path.rglob": {
+            "primary": "재귀패턴찾기",
+            "aliases": [
+              "재귀패턴찾아",
+              "ㅈㄱㅍㅌㅊㄱ"
+            ]
+          },
+          "pathlib.Path.read_text": {
+            "primary": "텍스트읽기",
+            "aliases": [
+              "텍스트읽어",
+              "ㅌㅅㅌㅇㄱ"
+            ]
+          },
+          "pathlib.Path.write_text": {
+            "primary": "텍스트쓰기",
+            "aliases": [
+              "텍스트써",
+              "ㅌㅅㅌㅆㄱ"
+            ]
+          },
+          "pathlib.Path.read_bytes": {
+            "primary": "바이트읽기",
+            "aliases": [
+              "바이트읽어",
+              "ㅂㅇㅌㅇㄱ"
+            ]
+          },
+          "pathlib.Path.write_bytes": {
+            "primary": "바이트쓰기",
+            "aliases": [
+              "바이트써",
+              "ㅂㅇㅌㅆㄱ"
+            ]
+          },
+          "pathlib.Path.resolve": {
+            "primary": "경로확정",
+            "aliases": [
+              "ㄱㄹㅎㅈ"
+            ]
+          },
+          "pathlib.Path.rename": {
+            "primary": "이름변경",
+            "aliases": [
+              "이름바꾸기",
+              "ㅇㄹㅂㄱ"
+            ]
+          },
+          "pathlib.Path.replace": {
+            "primary": "교체",
+            "aliases": [
+              "ㄱㅊ"
+            ]
+          },
+          "pathlib.Path.unlink": {
+            "primary": "연결해제",
+            "aliases": [
+              "ㅇㄱㅎㅈ"
+            ]
+          }
+        }
+      },
+      "datetime": {
+        "commonAliases": [
+          "dt"
+        ],
+        "members": {
+          "datetime.date": {
+            "primary": "날짜",
+            "aliases": [
+              "ㄴㅉ"
+            ]
+          },
+          "datetime.time": {
+            "primary": "시간",
+            "aliases": [
+              "ㅅㄱ"
+            ]
+          },
+          "datetime.datetime": {
+            "primary": "날짜시간",
+            "aliases": [
+              "ㄴㅉㅅㄱ"
+            ]
+          },
+          "datetime.timedelta": {
+            "primary": "시간차",
+            "aliases": [
+              "ㅅㄱㅊ"
+            ]
+          },
+          "datetime.timezone": {
+            "primary": "시간대",
+            "aliases": [
+              "ㅅㄱㄷ"
+            ]
+          },
+          "datetime.datetime.now": {
+            "primary": "현재시간",
+            "aliases": [
+              "ㅎㅈㅅㄱ"
+            ]
+          },
+          "datetime.datetime.today": {
+            "primary": "오늘",
+            "aliases": [
+              "ㅇㄴ"
+            ]
+          },
+          "datetime.datetime.utcnow": {
+            "primary": "세계표준시",
+            "aliases": [
+              "ㅅㄱㅍㅈㅅ"
+            ]
+          },
+          "datetime.datetime.strptime": {
+            "primary": "문자열날짜로",
+            "aliases": [
+              "ㅁㅈㅇㄴㅉㄹ"
+            ]
+          },
+          "datetime.datetime.strftime": {
+            "primary": "날짜문자열로",
+            "aliases": [
+              "ㄴㅉㅁㅈㅇㄹ"
+            ]
+          },
+          "datetime.date.today": {
+            "primary": "오늘",
+            "aliases": [
+              "ㅇㄴ"
+            ]
+          }
+        }
+      },
+      "re": {
+        "commonAliases": [],
+        "members": {
+          "re.compile": {
+            "primary": "컴파일",
+            "aliases": [
+              "ㅋㅍㅇ"
+            ]
+          },
+          "re.match": {
+            "primary": "일치",
+            "aliases": [
+              "ㅇㅊ"
+            ]
+          },
+          "re.fullmatch": {
+            "primary": "전체일치",
+            "aliases": [
+              "ㅈㅊㅇㅊ"
+            ]
+          },
+          "re.search": {
+            "primary": "검색",
+            "aliases": [
+              "ㄱㅅ"
+            ]
+          },
+          "re.findall": {
+            "primary": "모두찾기",
+            "aliases": [
+              "모두찾아",
+              "ㅁㄷㅊㄱ"
+            ]
+          },
+          "re.finditer": {
+            "primary": "반복찾기",
+            "aliases": [
+              "반복찾아",
+              "ㅂㅂㅊㄱ"
+            ]
+          },
+          "re.split": {
+            "primary": "나누기",
+            "aliases": [
+              "나눠",
+              "ㄴㄴㄱ"
+            ]
+          },
+          "re.sub": {
+            "primary": "치환",
+            "aliases": [
+              "ㅊㅎ"
+            ]
+          },
+          "re.subn": {
+            "primary": "치환개수포함",
+            "aliases": [
+              "ㅊㅎㄱㅅㅍㅎ"
+            ]
+          },
+          "re.escape": {
+            "primary": "이스케이프",
+            "aliases": [
+              "ㅇㅅㅋㅇㅍ"
+            ]
+          }
+        }
+      },
+      "collections": {
+        "commonAliases": [],
+        "members": {
+          "collections.Counter": {
+            "primary": "계수기",
+            "aliases": [
+              "ㄱㅅㄱ"
+            ]
+          },
+          "collections.defaultdict": {
+            "primary": "기본값사전",
+            "aliases": [
+              "ㄱㅂㄱㅅㅈ"
+            ]
+          },
+          "collections.deque": {
+            "primary": "양방향큐",
+            "aliases": [
+              "ㅇㅂㅎㅋ"
+            ]
+          },
+          "collections.namedtuple": {
+            "primary": "이름있는튜플",
+            "aliases": [
+              "ㅇㄹㅇㄴㅌㅍ"
+            ]
+          },
+          "collections.ChainMap": {
+            "primary": "연쇄맵",
+            "aliases": [
+              "ㅇㅅㅁ"
+            ]
+          },
+          "collections.OrderedDict": {
+            "primary": "순서사전",
+            "aliases": [
+              "ㅅㅅㅅㅈ"
+            ]
+          }
+        }
+      }
+    },
+    "thirdParty": {
+      "pandas": {
+        "commonAliases": [
+          "pd"
+        ],
+        "members": {
+          "pandas.DataFrame": {
+            "primary": "데이터프레임",
+            "aliases": [
+              "ㄷㅇㅌㅍㄹㅇ"
+            ]
+          },
+          "pandas.Series": {
+            "primary": "시리즈",
+            "aliases": [
+              "ㅅㄹㅈ"
+            ]
+          },
+          "pandas.read_csv": {
+            "primary": "CSV읽기",
+            "aliases": [
+              "CSV읽어",
+              "CSVㅇㄱ"
+            ]
+          },
+          "pandas.read_excel": {
+            "primary": "엑셀읽기",
+            "aliases": [
+              "엑셀읽어",
+              "ㅇㅅㅇㄱ"
+            ]
+          },
+          "pandas.read_json": {
+            "primary": "제이슨읽기",
+            "aliases": [
+              "제이슨읽어",
+              "ㅈㅇㅅㅇㄱ"
+            ]
+          },
+          "pandas.concat": {
+            "primary": "연결",
+            "aliases": [
+              "ㅇㄱ"
+            ]
+          },
+          "pandas.merge": {
+            "primary": "병합",
+            "aliases": [
+              "ㅂㅎ"
+            ]
+          },
+          "pandas.crosstab": {
+            "primary": "교차표",
+            "aliases": [
+              "ㄱㅊㅍ"
+            ]
+          },
+          "pandas.pivot_table": {
+            "primary": "피벗테이블",
+            "aliases": [
+              "ㅍㅂㅌㅇㅂ"
+            ]
+          },
+          "pandas.to_datetime": {
+            "primary": "날짜시간으로",
+            "aliases": [
+              "ㄴㅉㅅㄱㅇㄹ"
+            ]
+          },
+          "pandas.isna": {
+            "primary": "결측값확인",
+            "aliases": [
+              "결측값체크",
+              "ㄱㅊㄱㅎㅇ"
+            ]
+          },
+          "pandas.notna": {
+            "primary": "결측값아님",
+            "aliases": [
+              "ㄱㅊㄱㅇㄴ"
+            ]
+          },
+          "pandas.DataFrame.head": {
+            "primary": "앞부분",
+            "aliases": [
+              "ㅇㅂㅂ"
+            ]
+          },
+          "pandas.DataFrame.tail": {
+            "primary": "뒷부분",
+            "aliases": [
+              "ㄷㅂㅂ"
+            ]
+          },
+          "pandas.DataFrame.info": {
+            "primary": "정보",
+            "aliases": [
+              "ㅈㅂ"
+            ]
+          },
+          "pandas.DataFrame.describe": {
+            "primary": "요약",
+            "aliases": [
+              "ㅇㅇ"
+            ]
+          },
+          "pandas.DataFrame.drop": {
+            "primary": "삭제",
+            "aliases": [
+              "ㅅㅈ"
+            ]
+          },
+          "pandas.DataFrame.dropna": {
+            "primary": "결측값삭제",
+            "aliases": [
+              "ㄱㅊㄱㅅㅈ"
+            ]
+          },
+          "pandas.DataFrame.fillna": {
+            "primary": "결측값채우기",
+            "aliases": [
+              "ㄱㅊㄱㅊㅇㄱ"
+            ]
+          },
+          "pandas.DataFrame.groupby": {
+            "primary": "그룹화",
+            "aliases": [
+              "ㄱㄹㅎ"
+            ]
+          },
+          "pandas.DataFrame.merge": {
+            "primary": "병합",
+            "aliases": [
+              "ㅂㅎ"
+            ]
+          },
+          "pandas.DataFrame.sort_values": {
+            "primary": "값정렬",
+            "aliases": [
+              "ㄱㅈㄹ"
+            ]
+          },
+          "pandas.DataFrame.to_csv": {
+            "primary": "CSV로",
+            "aliases": [
+              "CSVㄹ"
+            ]
+          },
+          "pandas.DataFrame.to_excel": {
+            "primary": "엑셀로",
+            "aliases": [
+              "ㅇㅅㄹ"
+            ]
+          },
+          "pandas.Series.value_counts": {
+            "primary": "값개수",
+            "aliases": [
+              "ㄱㄱㅅ"
+            ]
+          }
+        }
+      },
+      "numpy": {
+        "commonAliases": [
+          "np"
+        ],
+        "members": {
+          "numpy.array": {
+            "primary": "배열",
+            "aliases": [
+              "ㅂㅇ"
+            ]
+          },
+          "numpy.asarray": {
+            "primary": "배열로",
+            "aliases": [
+              "ㅂㅇㄹ"
+            ]
+          },
+          "numpy.arange": {
+            "primary": "범위배열",
+            "aliases": [
+              "ㅂㅇㅂㅇ"
+            ]
+          },
+          "numpy.linspace": {
+            "primary": "등간격배열",
+            "aliases": [
+              "ㄷㄱㄱㅂㅇ"
+            ]
+          },
+          "numpy.zeros": {
+            "primary": "영배열",
+            "aliases": [
+              "ㅇㅂㅇ"
+            ]
+          },
+          "numpy.ones": {
+            "primary": "일배열",
+            "aliases": [
+              "ㅇㅂㅇ_별칭"
+            ]
+          },
+          "numpy.empty": {
+            "primary": "빈배열",
+            "aliases": [
+              "ㅂㅂㅇ"
+            ]
+          },
+          "numpy.full": {
+            "primary": "채운배열",
+            "aliases": [
+              "ㅊㅇㅂㅇ"
+            ]
+          },
+          "numpy.eye": {
+            "primary": "단위행렬",
+            "aliases": [
+              "ㄷㅇㅎㄹ"
+            ]
+          },
+          "numpy.reshape": {
+            "primary": "형태변경",
+            "aliases": [
+              "형태바꾸기",
+              "ㅎㅌㅂㄱ"
+            ]
+          },
+          "numpy.concatenate": {
+            "primary": "이어붙이기",
+            "aliases": [
+              "이어붙여",
+              "ㅇㅇㅂㅇㄱ"
+            ]
+          },
+          "numpy.stack": {
+            "primary": "쌓기",
+            "aliases": [
+              "ㅆㄱ"
+            ]
+          },
+          "numpy.mean": {
+            "primary": "평균",
+            "aliases": [
+              "ㅍㄱ"
+            ]
+          },
+          "numpy.sum": {
+            "primary": "합계",
+            "aliases": [
+              "ㅎㄱ"
+            ]
+          },
+          "numpy.min": {
+            "primary": "최솟값",
+            "aliases": [
+              "ㅊㅅㄱ"
+            ]
+          },
+          "numpy.max": {
+            "primary": "최댓값",
+            "aliases": [
+              "ㅊㄷㄱ"
+            ]
+          },
+          "numpy.std": {
+            "primary": "표준편차",
+            "aliases": [
+              "ㅍㅈㅍㅊ"
+            ]
+          },
+          "numpy.var": {
+            "primary": "분산",
+            "aliases": [
+              "ㅂㅅ"
+            ]
+          },
+          "numpy.argmin": {
+            "primary": "최솟값위치",
+            "aliases": [
+              "ㅊㅅㄱㅇㅊ"
+            ]
+          },
+          "numpy.argmax": {
+            "primary": "최댓값위치",
+            "aliases": [
+              "ㅊㄷㄱㅇㅊ"
+            ]
+          },
+          "numpy.dot": {
+            "primary": "내적",
+            "aliases": [
+              "ㄴㅈ"
+            ]
+          },
+          "numpy.matmul": {
+            "primary": "행렬곱",
+            "aliases": [
+              "ㅎㄹㄱ"
+            ]
+          },
+          "numpy.where": {
+            "primary": "조건선택",
+            "aliases": [
+              "ㅈㄱㅅㅌ"
+            ]
+          },
+          "numpy.random": {
+            "primary": "난수모듈",
+            "aliases": [
+              "ㄴㅅㅁㄷ"
+            ]
+          },
+          "numpy.random.rand": {
+            "primary": "균등난수",
+            "aliases": [
+              "ㄱㄷㄴㅅ"
+            ]
+          },
+          "numpy.random.randn": {
+            "primary": "정규난수",
+            "aliases": [
+              "ㅈㄱㄴㅅ"
+            ]
+          },
+          "numpy.random.randint": {
+            "primary": "무작위정수",
+            "aliases": [
+              "ㅁㅈㅇㅈㅅ"
+            ]
+          },
+          "numpy.ndarray.shape": {
+            "primary": "형태",
+            "aliases": [
+              "ㅎㅌ"
+            ]
+          },
+          "numpy.ndarray.dtype": {
+            "primary": "자료형",
+            "aliases": [
+              "ㅈㄹㅎ"
+            ]
+          },
+          "numpy.ndarray.reshape": {
+            "primary": "형태변경",
+            "aliases": [
+              "형태바꾸기",
+              "ㅎㅌㅂㄱ"
+            ]
+          },
+          "numpy.ndarray.flatten": {
+            "primary": "평탄화",
+            "aliases": [
+              "ㅍㅌㅎ"
+            ]
+          },
+          "numpy.ndarray.tolist": {
+            "primary": "목록으로",
+            "aliases": [
+              "ㅁㄹㅇㄹ"
+            ]
+          }
+        }
+      },
+      "matplotlib.pyplot": {
+        "commonAliases": [
+          "plt"
+        ],
+        "members": {
+          "matplotlib.pyplot.figure": {
+            "primary": "그림",
+            "aliases": [
+              "ㄱㄹ"
+            ]
+          },
+          "matplotlib.pyplot.subplots": {
+            "primary": "여러그림",
+            "aliases": [
+              "ㅇㄹㄱㄹ"
+            ]
+          },
+          "matplotlib.pyplot.plot": {
+            "primary": "선그래프",
+            "aliases": [
+              "ㅅㄱㄹㅍ"
+            ]
+          },
+          "matplotlib.pyplot.scatter": {
+            "primary": "산점도",
+            "aliases": [
+              "ㅅㅈㄷ"
+            ]
+          },
+          "matplotlib.pyplot.bar": {
+            "primary": "막대그래프",
+            "aliases": [
+              "ㅁㄷㄱㄹㅍ"
+            ]
+          },
+          "matplotlib.pyplot.hist": {
+            "primary": "히스토그램",
+            "aliases": [
+              "ㅎㅅㅌㄱㄹ"
+            ]
+          },
+          "matplotlib.pyplot.imshow": {
+            "primary": "이미지표시",
+            "aliases": [
+              "이미지보여줘",
+              "ㅇㅁㅈㅍㅅ"
+            ]
+          },
+          "matplotlib.pyplot.title": {
+            "primary": "제목",
+            "aliases": [
+              "ㅈㅁ"
+            ]
+          },
+          "matplotlib.pyplot.xlabel": {
+            "primary": "가로축이름",
+            "aliases": [
+              "ㄱㄹㅊㅇㄹ"
+            ]
+          },
+          "matplotlib.pyplot.ylabel": {
+            "primary": "세로축이름",
+            "aliases": [
+              "ㅅㄹㅊㅇㄹ"
+            ]
+          },
+          "matplotlib.pyplot.xlim": {
+            "primary": "가로축범위",
+            "aliases": [
+              "ㄱㄹㅊㅂㅇ"
+            ]
+          },
+          "matplotlib.pyplot.ylim": {
+            "primary": "세로축범위",
+            "aliases": [
+              "ㅅㄹㅊㅂㅇ"
+            ]
+          },
+          "matplotlib.pyplot.legend": {
+            "primary": "범례",
+            "aliases": [
+              "ㅂㄹ"
+            ]
+          },
+          "matplotlib.pyplot.grid": {
+            "primary": "격자",
+            "aliases": [
+              "ㄱㅈ"
+            ]
+          },
+          "matplotlib.pyplot.tight_layout": {
+            "primary": "레이아웃정리",
+            "aliases": [
+              "ㄹㅇㅇㅇㅈㄹ"
+            ]
+          },
+          "matplotlib.pyplot.savefig": {
+            "primary": "그림저장",
+            "aliases": [
+              "그림세이브",
+              "ㄱㄹㅈㅈ"
+            ]
+          },
+          "matplotlib.pyplot.show": {
+            "primary": "그림표시",
+            "aliases": [
+              "그림보여줘",
+              "ㄱㄹㅍㅅ"
+            ]
+          },
+          "matplotlib.pyplot.close": {
+            "primary": "그림닫기",
+            "aliases": [
+              "ㄱㄹㄷㄱ"
+            ]
+          }
+        }
+      },
+      "pygame": {
+        "commonAliases": [],
+        "members": {
+          "pygame.init": {
+            "primary": "초기화",
+            "aliases": [
+              "ㅊㄱㅎ"
+            ]
+          },
+          "pygame.quit": {
+            "primary": "끝내기",
+            "aliases": [
+              "ㄲㄴㄱ"
+            ]
+          },
+          "pygame.display.set_mode": {
+            "primary": "화면설정",
+            "aliases": [
+              "화면세팅",
+              "ㅎㅁㅅㅈ"
+            ]
+          },
+          "pygame.display.set_caption": {
+            "primary": "제목설정",
+            "aliases": [
+              "제목세팅",
+              "ㅈㅁㅅㅈ"
+            ]
+          },
+          "pygame.display.update": {
+            "primary": "화면갱신",
+            "aliases": [
+              "ㅎㅁㄱㅅ"
+            ]
+          },
+          "pygame.display.flip": {
+            "primary": "뒤집기",
+            "aliases": [
+              "ㄷㅈㄱ"
+            ]
+          },
+          "pygame.event.get": {
+            "primary": "이벤트목록",
+            "aliases": [
+              "이벤트s",
+              "ㅇㅂㅌㅁㄹ"
+            ]
+          },
+          "pygame.event.poll": {
+            "primary": "이벤트확인",
+            "aliases": [
+              "이벤트체크",
+              "ㅇㅂㅌㅎㅇ"
+            ]
+          },
+          "pygame.draw.rect": {
+            "primary": "사각형그리기",
+            "aliases": [
+              "ㅅㄱㅎㄱㄹㄱ"
+            ]
+          },
+          "pygame.draw.circle": {
+            "primary": "원그리기",
+            "aliases": [
+              "ㅇㄱㄹㄱ"
+            ]
+          },
+          "pygame.draw.line": {
+            "primary": "선그리기",
+            "aliases": [
+              "ㅅㄱㄹㄱ"
+            ]
+          },
+          "pygame.draw.polygon": {
+            "primary": "다각형그리기",
+            "aliases": [
+              "ㄷㄱㅎㄱㄹㄱ"
+            ]
+          },
+          "pygame.image.load": {
+            "primary": "이미지불러오기",
+            "aliases": [
+              "이미지불러와",
+              "ㅇㅁㅈㅂㄹㅇㄱ"
+            ]
+          },
+          "pygame.image.save": {
+            "primary": "이미지저장",
+            "aliases": [
+              "이미지세이브",
+              "ㅇㅁㅈㅈㅈ"
+            ]
+          },
+          "pygame.transform.scale": {
+            "primary": "크기변경",
+            "aliases": [
+              "크기바꾸기",
+              "ㅋㄱㅂㄱ"
+            ]
+          },
+          "pygame.transform.rotate": {
+            "primary": "회전",
+            "aliases": [
+              "ㅎㅈ"
+            ]
+          },
+          "pygame.time.Clock": {
+            "primary": "시계",
+            "aliases": [
+              "ㅅㄱ"
+            ]
+          },
+          "pygame.time.get_ticks": {
+            "primary": "경과시간",
+            "aliases": [
+              "ㄱㄱㅅㄱ"
+            ]
+          },
+          "pygame.key.get_pressed": {
+            "primary": "눌림가져오기",
+            "aliases": [
+              "눌림가져와",
+              "ㄴㄹㄱㅈㅇㄱ"
+            ]
+          },
+          "pygame.mouse.get_pos": {
+            "primary": "위치가져오기",
+            "aliases": [
+              "위치가져와",
+              "ㅇㅊㄱㅈㅇㄱ"
+            ]
+          },
+          "pygame.mouse.get_pressed": {
+            "primary": "눌림가져오기",
+            "aliases": [
+              "눌림가져와",
+              "ㄴㄹㄱㅈㅇㄱ"
+            ]
+          },
+          "pygame.mixer.init": {
+            "primary": "초기화",
+            "aliases": [
+              "ㅊㄱㅎ"
+            ]
+          },
+          "pygame.mixer.Sound": {
+            "primary": "소리",
+            "aliases": [
+              "ㅅㄹ"
+            ]
+          },
+          "pygame.mixer.music.load": {
+            "primary": "음악불러오기",
+            "aliases": [
+              "음악불러와",
+              "ㅇㅇㅂㄹㅇㄱ"
+            ]
+          },
+          "pygame.mixer.music.play": {
+            "primary": "재생",
+            "aliases": [
+              "ㅈㅅ"
+            ]
+          },
+          "pygame.font.Font": {
+            "primary": "글꼴",
+            "aliases": [
+              "ㄱㄲ"
+            ]
+          },
+          "pygame.font.SysFont": {
+            "primary": "시스템글꼴",
+            "aliases": [
+              "ㅅㅅㅌㄱㄲ"
+            ]
+          }
+        }
+      },
+      "flask": {
+        "commonAliases": [],
+        "members": {
+          "flask.Flask": {
+            "primary": "플라스크",
+            "aliases": [
+              "ㅍㄹㅅㅋ"
+            ]
+          },
+          "flask.request": {
+            "primary": "요청",
+            "aliases": [
+              "ㅇㅊ"
+            ]
+          },
+          "flask.session": {
+            "primary": "세션",
+            "aliases": [
+              "ㅅㅅ"
+            ]
+          },
+          "flask.jsonify": {
+            "primary": "제이슨화",
+            "aliases": [
+              "ㅈㅇㅅㅎ"
+            ]
+          },
+          "flask.render_template": {
+            "primary": "템플릿렌더링",
+            "aliases": [
+              "ㅌㅍㄹㄹㄷㄹ"
+            ]
+          },
+          "flask.redirect": {
+            "primary": "리디렉션",
+            "aliases": [
+              "ㄹㄷㄹㅅ"
+            ]
+          },
+          "flask.url_for": {
+            "primary": "주소생성",
+            "aliases": [
+              "ㅈㅅㅅㅅ"
+            ]
+          },
+          "flask.abort": {
+            "primary": "중단하기",
+            "aliases": [
+              "중단",
+              "ㅈㄷㅎㄱ"
+            ]
+          },
+          "flask.make_response": {
+            "primary": "응답만들기",
+            "aliases": [
+              "응답만들어",
+              "ㅇㄷㅁㄷㄱ"
+            ]
+          },
+          "flask.send_file": {
+            "primary": "파일전송",
+            "aliases": [
+              "ㅍㅇㅈㅅ"
+            ]
+          },
+          "flask.Flask.route": {
+            "primary": "경로등록",
+            "aliases": [
+              "ㄱㄹㄷㄹ"
+            ]
+          },
+          "flask.Flask.run": {
+            "primary": "실행",
+            "aliases": [
+              "ㅅㅎ"
+            ]
+          },
+          "flask.Request.args": {
+            "primary": "인자",
+            "aliases": [
+              "ㅇㅈ"
+            ]
+          },
+          "flask.Request.form": {
+            "primary": "양식값",
+            "aliases": [
+              "ㅇㅅㄱ"
+            ]
+          },
+          "flask.Request.files": {
+            "primary": "파일목록",
+            "aliases": [
+              "파일s",
+              "ㅍㅇㅁㄹ"
+            ]
+          },
+          "flask.Request.json": {
+            "primary": "제이슨",
+            "aliases": [
+              "ㅈㅇㅅ"
+            ]
+          }
+        }
+      },
+      "torch": {
+        "commonAliases": [],
+        "members": {
+          "torch.tensor": {
+            "primary": "텐서생성",
+            "aliases": [
+              "ㅌㅅㅅㅅ"
+            ]
+          },
+          "torch.Tensor": {
+            "primary": "텐서",
+            "aliases": [
+              "ㅌㅅ"
+            ]
+          },
+          "torch.zeros": {
+            "primary": "영배열",
+            "aliases": [
+              "ㅇㅂㅇ"
+            ]
+          },
+          "torch.ones": {
+            "primary": "일배열",
+            "aliases": [
+              "ㅇㅂㅇ_별칭"
+            ]
+          },
+          "torch.empty": {
+            "primary": "빈배열",
+            "aliases": [
+              "ㅂㅂㅇ"
+            ]
+          },
+          "torch.rand": {
+            "primary": "균등난수",
+            "aliases": [
+              "ㄱㄷㄴㅅ"
+            ]
+          },
+          "torch.randn": {
+            "primary": "정규난수",
+            "aliases": [
+              "ㅈㄱㄴㅅ"
+            ]
+          },
+          "torch.arange": {
+            "primary": "범위배열",
+            "aliases": [
+              "ㅂㅇㅂㅇ"
+            ]
+          },
+          "torch.cat": {
+            "primary": "텐서이어붙이기",
+            "aliases": [
+              "텐서이어붙여",
+              "ㅌㅅㅇㅇㅂㅇㄱ"
+            ]
+          },
+          "torch.stack": {
+            "primary": "쌓기",
+            "aliases": [
+              "ㅆㄱ"
+            ]
+          },
+          "torch.reshape": {
+            "primary": "형태변경",
+            "aliases": [
+              "형태바꾸기",
+              "ㅎㅌㅂㄱ"
+            ]
+          },
+          "torch.flatten": {
+            "primary": "평탄화",
+            "aliases": [
+              "ㅍㅌㅎ"
+            ]
+          },
+          "torch.mean": {
+            "primary": "평균",
+            "aliases": [
+              "ㅍㄱ"
+            ]
+          },
+          "torch.sum": {
+            "primary": "합계",
+            "aliases": [
+              "ㅎㄱ"
+            ]
+          },
+          "torch.max": {
+            "primary": "최댓값",
+            "aliases": [
+              "ㅊㄷㄱ"
+            ]
+          },
+          "torch.min": {
+            "primary": "최솟값",
+            "aliases": [
+              "ㅊㅅㄱ"
+            ]
+          },
+          "torch.argmax": {
+            "primary": "최댓값위치",
+            "aliases": [
+              "ㅊㄷㄱㅇㅊ"
+            ]
+          },
+          "torch.argmin": {
+            "primary": "최솟값위치",
+            "aliases": [
+              "ㅊㅅㄱㅇㅊ"
+            ]
+          },
+          "torch.matmul": {
+            "primary": "행렬곱",
+            "aliases": [
+              "ㅎㄹㄱ"
+            ]
+          },
+          "torch.save": {
+            "primary": "텐서저장",
+            "aliases": [
+              "텐서세이브",
+              "ㅌㅅㅈㅈ"
+            ]
+          },
+          "torch.load": {
+            "primary": "텐서불러오기",
+            "aliases": [
+              "텐서불러와",
+              "ㅌㅅㅂㄹㅇㄱ"
+            ]
+          },
+          "torch.no_grad": {
+            "primary": "기울기비활성화",
+            "aliases": [
+              "ㄱㅇㄱㅂㅎㅅㅎ"
+            ]
+          },
+          "torch.cuda.is_available": {
+            "primary": "사용가능확인",
+            "aliases": [
+              "사용가능체크",
+              "ㅅㅇㄱㄴㅎㅇ"
+            ]
+          },
+          "torch.device": {
+            "primary": "장치",
+            "aliases": [
+              "ㅈㅊ"
+            ]
+          },
+          "torch.nn.Module": {
+            "primary": "모듈",
+            "aliases": [
+              "ㅁㄷ"
+            ]
+          },
+          "torch.nn.Linear": {
+            "primary": "선형층",
+            "aliases": [
+              "ㅅㅎㅊ"
+            ]
+          },
+          "torch.nn.Sequential": {
+            "primary": "순차모델",
+            "aliases": [
+              "ㅅㅊㅁㄷ"
+            ]
+          },
+          "torch.nn.ReLU": {
+            "primary": "렐루",
+            "aliases": [
+              "ㄹㄹ"
+            ]
+          },
+          "torch.nn.Sigmoid": {
+            "primary": "시그모이드",
+            "aliases": [
+              "ㅅㄱㅁㅇㄷ"
+            ]
+          },
+          "torch.nn.Softmax": {
+            "primary": "소프트맥스",
+            "aliases": [
+              "ㅅㅍㅌㅁㅅ"
+            ]
+          },
+          "torch.nn.Conv2d": {
+            "primary": "이차원합성곱",
+            "aliases": [
+              "ㅇㅊㅇㅎㅅㄱ"
+            ]
+          },
+          "torch.nn.CrossEntropyLoss": {
+            "primary": "교차엔트로피손실",
+            "aliases": [
+              "ㄱㅊㅇㅌㄹㅍㅅㅅ"
+            ]
+          },
+          "torch.optim.Adam": {
+            "primary": "아담",
+            "aliases": [
+              "ㅇㄷ"
+            ]
+          },
+          "torch.optim.SGD": {
+            "primary": "확률적경사하강",
+            "aliases": [
+              "ㅎㄹㅈㄱㅅㅎㄱ"
+            ]
+          },
+          "torch.utils.data.Dataset": {
+            "primary": "데이터셋",
+            "aliases": [
+              "ㄷㅇㅌㅅ"
+            ]
+          },
+          "torch.utils.data.DataLoader": {
+            "primary": "데이터로더",
+            "aliases": [
+              "ㄷㅇㅌㄹㄷ"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

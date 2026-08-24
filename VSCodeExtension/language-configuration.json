@@ -1,0 +1,36 @@
+{
+  "comments": {
+    "lineComment": "#"
+  },
+  "brackets": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"]
+  ],
+  "autoClosingPairs": [
+    { "open": "{", "close": "}" },
+    { "open": "[", "close": "]" },
+    { "open": "(", "close": ")" },
+    { "open": "'", "close": "'", "notIn": ["string", "comment"] },
+    { "open": "\"", "close": "\"", "notIn": ["string", "comment"] }
+  ],
+  "surroundingPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+    ["'", "'"],
+    ["\"", "\""]
+  ],
+  "wordPattern": "\\??[\\p{L}_][\\p{L}\\p{N}_]*",
+  "indentationRules": {
+    "increaseIndentPattern": "^\\s*(?:(?:비동기\\s+)?(?:정의|클래스|만약|아님만약|아님|반복|동안|시도하기|예외로|최종적으로|함께|맞춰보기|사례)\\b.*:|.*[({[]\\s*)$",
+    "decreaseIndentPattern": "^\\s*(?:아님만약|아님|예외로|최종적으로|사례)\\b"
+  },
+  "folding": {
+    "offSide": true,
+    "markers": {
+      "start": "^\\s*#\\s*region\\b",
+      "end": "^\\s*#\\s*endregion\\b"
+    }
+  }
+}

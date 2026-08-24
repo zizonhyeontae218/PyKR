@@ -1,0 +1,30 @@
+{
+  "manifest_path": "FILETREE.md",
+  "hash_path": "FILETREE.hash.json",
+  "language": "en",
+  "include": [],
+  "exclude": [
+    ".git/**",
+    ".dart_tool/**",
+    ".idea/**",
+    ".vscode/**",
+    ".vscode-test/**",
+    ".venv/**",
+    "venv/**",
+    "node_modules/**",
+    "build/**",
+    "dist/**",
+    "*.egg-info/**",
+    "coverage/**",
+    "__pycache__/**",
+    "**/__pycache__/**",
+    "*.lock",
+    "*.log",
+    "*.tmp",
+    "*.bak",
+    "*.swp",
+    ".DS_Store"
+  ],
+  "max_summary_bytes": 131072,
+  "commit_guard": true
+}

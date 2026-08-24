@@ -1,0 +1,190 @@
+{
+  "name": "pykr",
+  "displayName": "PyKR",
+  "description": "사용자 정의 한국어 Python 방언을 작성·실행·변환하는 VS Code 확장",
+  "version": "1.0.0",
+  "publisher": "HT08",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "keywords": [
+    "python",
+    "korean",
+    "language",
+    "translation"
+  ],
+  "extensionKind": [
+    "workspace"
+  ],
+  "main": "./VSCodeExtension/extension.js",
+  "activationEvents": [
+    "onLanguage:kpy",
+    "onCommand:pykr.run",
+    "onCommand:pykr.toPython",
+    "onCommand:pykr.toKpy",
+    "onCommand:pykr.openDictionary",
+    "onCommand:pykr.reloadDictionary",
+    "onCommand:pykr.validateDictionary"
+  ],
+  "scripts": {
+    "check": "node --check VSCodeExtension/extension.js && node --check VSCodeExtension/run-integration-test.js && node --check VSCodeExtension/integration-test.js && python -X utf8 VSCodeExtension/bridge.py self-check",
+    "test": "python -X utf8 -m unittest discover -s tests",
+    "test:vscode": "node VSCodeExtension/run-integration-test.js",
+    "benchmark": "python -X utf8 benchmarks/benchmark.py",
+    "package:vsix": "npx @vscode/vsce package --no-dependencies --allow-missing-repository --no-rewrite-relative-links"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "kpy",
+        "aliases": [
+          "PyKR",
+          "kpy"
+        ],
+        "extensions": [
+          ".kpy"
+        ],
+        "configuration": "./VSCodeExtension/language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "kpy",
+        "scopeName": "source.kpy",
+        "path": "./VSCodeExtension/kpy.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "pykr.run",
+        "title": "PyKR: 현재 KPY 실행",
+        "icon": "$(play)"
+      },
+      {
+        "command": "pykr.toPython",
+        "title": "PyKR: KPY → Python",
+        "icon": "$(arrow-right)"
+      },
+      {
+        "command": "pykr.toKpy",
+        "title": "PyKR: Python → KPY",
+        "icon": "$(arrow-left)"
+      },
+      {
+        "command": "pykr.openDictionary",
+        "title": "PyKR: 기본 사전 열기"
+      },
+      {
+        "command": "pykr.reloadDictionary",
+        "title": "PyKR: 사전 다시 불러오기"
+      },
+      {
+        "command": "pykr.validateDictionary",
+        "title": "PyKR: 사전 검사"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "pykr.run",
+          "when": "editorLangId == kpy",
+          "group": "navigation@1"
+        },
+        {
+          "command": "pykr.toPython",
+          "when": "editorLangId == kpy",
+          "group": "navigation@2"
+        },
+        {
+          "command": "pykr.toKpy",
+          "when": "editorLangId == python",
+          "group": "navigation@2"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "pykr.run",
+          "when": "editorLangId == kpy",
+          "group": "navigation@1"
+        },
+        {
+          "command": "pykr.toPython",
+          "when": "editorLangId == kpy",
+          "group": "navigation@2"
+        },
+        {
+          "command": "pykr.toKpy",
+          "when": "editorLangId == python",
+          "group": "navigation@2"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "pykr.run",
+        "key": "ctrl+alt+r",
+        "mac": "cmd+alt+r",
+        "when": "editorLangId == kpy"
+      },
+      {
+        "command": "pykr.toPython",
+        "key": "ctrl+alt+t",
+        "mac": "cmd+alt+t",
+        "when": "editorLangId == kpy"
+      },
+      {
+        "command": "pykr.toKpy",
+        "key": "ctrl+alt+t",
+        "mac": "cmd+alt+t",
+        "when": "editorLangId == python"
+      }
+    ],
+    "jsonValidation": [
+      {
+        "fileMatch": "**/GenderChange.Json",
+        "url": "./VSCodeExtension/gender-change.schema.json"
+      }
+    ],
+    "configuration": {
+      "title": "PyKR",
+      "properties": {
+        "pykr.pythonPath": {
+          "type": "string",
+          "default": "",
+          "scope": "resource",
+          "description": "비워두면 VS Code Python 확장의 현재 인터프리터를 사용합니다."
+        },
+        "pykr.dictionaryPath": {
+          "type": "string",
+          "default": "",
+          "scope": "resource",
+          "description": "비워두면 Documents/PYKR/GenderChange.Json을 사용합니다."
+        },
+        "pykr.diagnosticsDelay": {
+          "type": "number",
+          "default": 350,
+          "minimum": 0,
+          "scope": "resource",
+          "description": "KPY 실시간 문법 검사의 디바운스 시간(ms)입니다."
+        }
+      }
+    },
+    "configurationDefaults": {
+      "[kpy]": {
+        "editor.semanticHighlighting.enabled": true,
+        "editor.quickSuggestions": {
+          "strings": "on"
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@vscode/test-electron": "^3.1.0",
+    "@vscode/vsce": "^3.9.2"
+  }
+}

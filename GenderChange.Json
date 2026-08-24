@@ -1,0 +1,1710 @@
+{
+  "schemaVersion": 2,
+  "profile": {
+    "name": "Plain",
+    "description": "기본임",
+    "language": "ko-KR"
+  },
+  "syntax": {
+    "sourceExtension": ".kpy",
+    "targetExtension": ".py",
+    "variablePrefix": "?",
+    "variablePrefixMode": "required"
+  },
+  "translation": {
+    "keywords": {
+      "False": {
+        "primary": "거짓",
+        "aliases": [
+          "ㄴㄴ",
+          "ㄱㅈ"
+        ]
+      },
+      "None": {
+        "primary": "없음",
+        "aliases": [
+          "무",
+          "ㅇㅇ"
+        ]
+      },
+      "True": {
+        "primary": "참",
+        "aliases": [
+          "ㄹㅇ",
+          "ㅊ"
+        ]
+      },
+      "and": {
+        "primary": "그리고",
+        "aliases": [
+          "또한",
+          "ㄱㄹㄱ"
+        ]
+      },
+      "as": {
+        "primary": "로",
+        "aliases": [
+          "으로",
+          "ㄹ"
+        ]
+      },
+      "assert": {
+        "primary": "단언하다",
+        "aliases": [
+          "단언",
+          "ㄷㅇㅎㄷ"
+        ]
+      },
+      "async": {
+        "primary": "비동기",
+        "aliases": [
+          "비동",
+          "ㅂㄷㄱ"
+        ]
+      },
+      "await": {
+        "primary": "기다리기",
+        "aliases": [
+          "ㄱㄷ",
+          "ㄱㄷㄹㄱ"
+        ]
+      },
+      "break": {
+        "primary": "종료",
+        "aliases": [
+          "끝",
+          "ㅈㄹ"
+        ]
+      },
+      "class": {
+        "primary": "클래스",
+        "aliases": [
+          "틀",
+          "ㅋㄹㅅ"
+        ]
+      },
+      "continue": {
+        "primary": "계속",
+        "aliases": [
+          "쭉",
+          "ㄱㅅ"
+        ]
+      },
+      "def": {
+        "primary": "정의",
+        "aliases": [
+          "ㅈㅇ"
+        ]
+      },
+      "del": {
+        "primary": "삭제",
+        "aliases": [
+          "지워",
+          "ㅅㅈ"
+        ]
+      },
+      "elif": {
+        "primary": "아님만약",
+        "aliases": [
+          "아만",
+          "ㅇㄴㅁㅇ"
+        ]
+      },
+      "else": {
+        "primary": "아님",
+        "aliases": [
+          "ㄴ",
+          "ㅇㄴ"
+        ]
+      },
+      "except": {
+        "primary": "예외로",
+        "aliases": [
+          "예외",
+          "ㅇㅇㄹ"
+        ]
+      },
+      "finally": {
+        "primary": "최종적으로",
+        "aliases": [
+          "최수종",
+          "ㅊㅈㅈㅇㄹ"
+        ]
+      },
+      "for": {
+        "primary": "반복",
+        "aliases": [
+          "또",
+          "ㅂㅂ"
+        ]
+      },
+      "from": {
+        "primary": "부터",
+        "aliases": [
+          "ㅂㅌ"
+        ]
+      },
+      "global": {
+        "primary": "전역적인",
+        "aliases": [
+          "전역",
+          "ㅈㅇㅈㅇ"
+        ]
+      },
+      "if": {
+        "primary": "만약",
+        "aliases": [
+          "ㅁㅇ"
+        ]
+      },
+      "import": {
+        "primary": "입력",
+        "aliases": [
+          "냠냠",
+          "ㅇㄹ"
+        ]
+      },
+      "in": {
+        "primary": "안쪽에",
+        "aliases": [
+          "안",
+          "ㅇㅉㅇ"
+        ]
+      },
+      "is": {
+        "primary": "이다",
+        "aliases": [
+          "ㅇㄷ"
+        ]
+      },
+      "lambda": {
+        "primary": "익명의",
+        "aliases": [
+          "익명",
+          "ㅇㅁㅇ"
+        ]
+      },
+      "nonlocal": {
+        "primary": "밖에있는",
+        "aliases": [
+          "밖의",
+          "ㅂㅇㅇㄴ"
+        ]
+      },
+      "not": {
+        "primary": "뒤집어서",
+        "aliases": [
+          "반대",
+          "ㄷㅈㅇㅅ"
+        ]
+      },
+      "or": {
+        "primary": "아니면",
+        "aliases": [
+          "또는",
+          "ㅇㄴㅁ"
+        ]
+      },
+      "pass": {
+        "primary": "통과하기",
+        "aliases": [
+          "넘겨",
+          "통과",
+          "ㅌㄱㅎㄱ"
+        ]
+      },
+      "raise": {
+        "primary": "오류",
+        "aliases": [
+          "펑",
+          "에러"
+        ]
+      },
+      "return": {
+        "primary": "돌려주기",
+        "aliases": [
+          "반환",
+          "내놔",
+          "ㄷㄹㅈㄱ"
+        ]
+      },
+      "try": {
+        "primary": "시도하기",
+        "aliases": [
+          "시도",
+          "도전",
+          "진행",
+          "ㅅㄷㅎㄱ"
+        ],
+        "_comment_": "미안해요. 진행은 델타룬 밈이에요. 대충 봐주세요. 감사합니다."
+      },
+      "while": {
+        "primary": "동안",
+        "aliases": [
+          "일때",
+          "ㄷㅇ"
+        ]
+      },
+      "with": {
+        "primary": "함께",
+        "aliases": [
+          "ㅎㄲ"
+        ]
+      },
+      "yield": {
+        "primary": "건네",
+        "aliases": [
+          "줘",
+          "ㄱㄴ"
+        ]
+      }
+    },
+    "softKeywords": {
+      "_": {
+        "primary": "맥락적_키워드",
+        "aliases": [
+          "대충그거",
+          "ㅁㄹㅈ_ㅋㅇㄷ"
+        ]
+      },
+      "case": {
+        "primary": "사례",
+        "aliases": [
+          "ㅅㄹ"
+        ]
+      },
+      "match": {
+        "primary": "맞춰보기",
+        "aliases": [
+          "맞춰",
+          "비교",
+          "ㅁㅊㅂㄱ"
+        ]
+      },
+      "type": {
+        "primary": "종류",
+        "aliases": [
+          "별칭"
+        ]
+      }
+    },
+    "constants": {
+      "Ellipsis": {
+        "primary": "말줄임표",
+        "aliases": [
+          "넘어",
+          "ㅁㅈㅇㅍ"
+        ]
+      },
+      "NotImplemented": {
+        "primary": "구현되지않음",
+        "aliases": [
+          "이거없어",
+          "ㄱㅎㄷㅈㅇㅇ"
+        ]
+      }
+    },
+    "builtinFunctions": {
+      "abs": {
+        "primary": "절댓값",
+        "aliases": [
+          "뮨",
+          "ㅈㄷㄱ"
+        ]
+      },
+      "aiter": {
+        "primary": "변경",
+        "aliases": [
+          "바꿔",
+          "ㅂㄱ"
+        ]
+      },
+      "all": {
+        "primary": "모두",
+        "aliases": [
+          "다",
+          "ㅁㄷ"
+        ]
+      },
+      "anext": {
+        "primary": "비동기끝",
+        "aliases": [
+          "ㅂㄷㄱㄲ"
+        ]
+      },
+      "any": {
+        "primary": "아무거나",
+        "aliases": [
+          "아무",
+          "ㅇㅁㄱㄴ"
+        ]
+      },
+      "ascii": {
+        "primary": "아스키로",
+        "aliases": [
+          "아스키",
+          "ㅇㅅㅋ",
+          "ㅇㅅㅋㄹ"
+        ]
+      },
+      "bin": {
+        "primary": "이진수로",
+        "aliases": [
+          "이진수",
+          "ㅇㅈㅅ",
+          "ㅇㅈㅅㄹ"
+        ]
+      },
+      "breakpoint": {
+        "primary": "중단점",
+        "aliases": [
+          "ㅈㄷㅈ"
+        ]
+      },
+      "callable": {
+        "primary": "호출가능",
+        "aliases": [
+          "ㅎㅊㄱㄴ"
+        ]
+      },
+      "chr": {
+        "primary": "문자로",
+        "aliases": [
+          "문자",
+          "ㅁㅈ",
+          "ㅁㅈㄹ"
+        ]
+      },
+      "compile": {
+        "primary": "컴파일",
+        "aliases": [
+          "ㅋㅍㅇ"
+        ]
+      },
+      "delattr": {
+        "primary": "속성지우기",
+        "aliases": [
+          "속성삭제",
+          "ㅅㅅㅈㅇㄱ"
+        ]
+      },
+      "dir": {
+        "primary": "목록",
+        "aliases": [
+          "디렉토리",
+          "디렉",
+          "s",
+          "ㅁㄹ"
+        ]
+      },
+      "display": {
+        "primary": "표시하기",
+        "aliases": [
+          "표시",
+          "ㅍㅅㅎㄱ"
+        ]
+      },
+      "divmod": {
+        "primary": "나누고나머지",
+        "aliases": [
+          "나눔나머",
+          "ㄴㄴㄱㄴㅁㅈ"
+        ]
+      },
+      "eval": {
+        "primary": "평가하기",
+        "aliases": [
+          "평가",
+          "ㅍㄱㅎㄱ"
+        ]
+      },
+      "exec": {
+        "primary": "실행",
+        "aliases": [
+          "켜",
+          "ㅅㅎ"
+        ]
+      },
+      "execfile": {
+        "primary": "파일실행",
+        "aliases": [
+          "ㅍㅇㅅㅎ"
+        ]
+      },
+      "format": {
+        "primary": "형식",
+        "aliases": [
+          "ㅎㅅ"
+        ]
+      },
+      "getattr": {
+        "primary": "속성가져오기",
+        "aliases": [
+          "속성줘",
+          "속성가져와",
+          "ㅅㅅㄱㅈㅇㄱ"
+        ]
+      },
+      "globals": {
+        "primary": "전역적공간",
+        "aliases": [
+          "전역s",
+          "ㅈㅇㅈㄱㄱ"
+        ]
+      },
+      "hasattr": {
+        "primary": "속성확인",
+        "aliases": [
+          "속성체크",
+          "ㅅㅅㅎㅇ"
+        ]
+      },
+      "hash": {
+        "primary": "고유값",
+        "aliases": [
+          "해시",
+          "ㄱㅇㄱ"
+        ]
+      },
+      "hex": {
+        "primary": "십육진수로",
+        "aliases": [
+          "십육진수",
+          "십육",
+          "ㅅㅇㅈㅅ",
+          "ㅅㅇㅈㅅㄹ"
+        ]
+      },
+      "id": {
+        "primary": "식별자",
+        "aliases": [
+          "식",
+          "ㅅㅂㅈ"
+        ]
+      },
+      "input": {
+        "primary": "입력받기",
+        "aliases": [
+          "인풋",
+          "입력받아",
+          "ㅇㄹㅂㄱ"
+        ]
+      },
+      "isinstance": {
+        "primary": "객체확인",
+        "aliases": [
+          "객체체크",
+          "ㄱㅊㅎㅇ"
+        ]
+      },
+      "issubclass": {
+        "primary": "하위객체확인",
+        "aliases": [
+          "하위확인",
+          "하위",
+          "하위객체체크",
+          "ㅎㅇㄱㅊㅎㅇ"
+        ]
+      },
+      "iter": {
+        "primary": "반복자로",
+        "aliases": [
+          "반복자",
+          "ㅂㅂㅈ",
+          "ㅂㅂㅈㄹ"
+        ]
+      },
+      "len": {
+        "primary": "길이",
+        "aliases": [
+          "길",
+          "ㄱㅇ"
+        ]
+      },
+      "locals": {
+        "primary": "지역공간",
+        "aliases": [
+          "지역s",
+          "ㅈㅇㄱㄱ"
+        ]
+      },
+      "max": {
+        "primary": "최댓값",
+        "aliases": [
+          "최대",
+          "맥스",
+          "ㅊㄷㄱ"
+        ]
+      },
+      "min": {
+        "primary": "최솟값",
+        "aliases": [
+          "최소",
+          "민",
+          "ㅊㅅㄱ"
+        ]
+      },
+      "next": {
+        "primary": "다음",
+        "aliases": [
+          "다음값"
+        ]
+      },
+      "oct": {
+        "primary": "팔진수로",
+        "aliases": [
+          "팔진수",
+          "ㅍㅈㅅ",
+          "ㅍㅈㅅㄹ"
+        ]
+      },
+      "open": {
+        "primary": "열기",
+        "aliases": [
+          "오픈",
+          "ㅇㄱ"
+        ]
+      },
+      "ord": {
+        "primary": "코드로",
+        "aliases": [
+          "유니코드",
+          "코드값",
+          "ㅋㄷㄹ"
+        ]
+      },
+      "pow": {
+        "primary": "거듭제곱",
+        "aliases": [
+          "제곱",
+          "파워",
+          "ㄱㄷㅈㄱ"
+        ]
+      },
+      "print": {
+        "primary": "출력",
+        "aliases": [
+          "프린트",
+          "찍기",
+          "퉤",
+          "말해",
+          "ㅊㄹ"
+        ]
+      },
+      "repr": {
+        "primary": "표현하기",
+        "aliases": [
+          "표현",
+          "리프",
+          "ㅍㅎㅎㄱ"
+        ]
+      },
+      "round": {
+        "primary": "반올림",
+        "aliases": [
+          "라운드",
+          "ㅂㅇㄹ"
+        ]
+      },
+      "runfile": {
+        "primary": "파일돌리기",
+        "aliases": [
+          "파일켜",
+          "파일돌려",
+          "ㅍㅇㄷㄹㄱ"
+        ]
+      },
+      "setattr": {
+        "primary": "속성설정",
+        "aliases": [
+          "속성넣기",
+          "속성세팅",
+          "ㅅㅅㅅㅈ"
+        ]
+      },
+      "sorted": {
+        "primary": "정렬하기",
+        "aliases": [
+          "소트",
+          "ㅈㄹㅎㄱ"
+        ]
+      },
+      "sum": {
+        "primary": "합계",
+        "aliases": [
+          "합",
+          "섬",
+          "ㅎㄱ"
+        ]
+      },
+      "vars": {
+        "primary": "변수목록",
+        "aliases": [
+          "변수s",
+          "ㅂㅅㅁㄹ"
+        ]
+      }
+    },
+    "builtinTypes": {
+      "bool": {
+        "primary": "논리형",
+        "aliases": [
+          "불",
+          "참거짓",
+          "ㄴㄹㅎ"
+        ]
+      },
+      "bytearray": {
+        "primary": "바이트배열",
+        "aliases": [
+          "바이트어레이",
+          "ㅂㅇㅌㅂㅇ"
+        ]
+      },
+      "bytes": {
+        "primary": "바이트",
+        "aliases": [
+          "바이트스",
+          "ㅂㅇㅌ"
+        ]
+      },
+      "classmethod": {
+        "primary": "클래스메서드",
+        "aliases": [
+          "클래스메소드",
+          "ㅋㄹㅅㅁㅅㄷ"
+        ]
+      },
+      "complex": {
+        "primary": "복소수",
+        "aliases": [
+          "컴플렉스",
+          "ㅂㅅㅅ"
+        ]
+      },
+      "dict": {
+        "primary": "사전",
+        "aliases": [
+          "딕셔너리",
+          "딕트"
+        ]
+      },
+      "enumerate": {
+        "primary": "번호붙이기",
+        "aliases": [
+          "이뉴머레이트",
+          "번호",
+          "번호붙여",
+          "ㅂㅎㅂㅇㄱ"
+        ]
+      },
+      "filter": {
+        "primary": "거르기",
+        "aliases": [
+          "필터"
+        ]
+      },
+      "float": {
+        "primary": "실수",
+        "aliases": [
+          "플로트",
+          "ㅅㅅ"
+        ]
+      },
+      "frozenset": {
+        "primary": "고정집합",
+        "aliases": [
+          "프로즌셋",
+          "ㄱㅈㅈㅎ"
+        ]
+      },
+      "int": {
+        "primary": "정수",
+        "aliases": [
+          "인트",
+          "ㅈㅅ"
+        ]
+      },
+      "list": {
+        "primary": "리스트",
+        "aliases": [
+          "리스트형",
+          "ㄹㅅㅌ"
+        ]
+      },
+      "map": {
+        "primary": "매핑하기",
+        "aliases": [
+          "맵",
+          "매핑",
+          "ㅁㅍㅎㄱ"
+        ]
+      },
+      "memoryview": {
+        "primary": "메모리보기",
+        "aliases": [
+          "메모리뷰",
+          "ㅁㅁㄹㅂㄱ"
+        ]
+      },
+      "object": {
+        "primary": "객체",
+        "aliases": [
+          "오브젝트",
+          "ㄱㅊ"
+        ]
+      },
+      "property": {
+        "primary": "속성",
+        "aliases": [
+          "프로퍼티"
+        ]
+      },
+      "range": {
+        "primary": "범위",
+        "aliases": [
+          "레인지",
+          "ㅂㅇ"
+        ]
+      },
+      "reversed": {
+        "primary": "역순으로",
+        "aliases": [
+          "리버스드",
+          "ㅇㅅㅇㄹ"
+        ]
+      },
+      "set": {
+        "primary": "집합",
+        "aliases": [
+          "셋",
+          "ㅈㅎ"
+        ]
+      },
+      "slice": {
+        "primary": "조각",
+        "aliases": [
+          "슬라이스",
+          "ㅈㄱ"
+        ]
+      },
+      "staticmethod": {
+        "primary": "정적메서드",
+        "aliases": [
+          "스태틱메서드",
+          "ㅈㅈㅁㅅㄷ"
+        ]
+      },
+      "str": {
+        "primary": "문자열",
+        "aliases": [
+          "스트링",
+          "ㅁㅈㅇ"
+        ]
+      },
+      "super": {
+        "primary": "상위클래스",
+        "aliases": [
+          "슈퍼",
+          "ㅅㅇㅋㄹㅅ"
+        ]
+      },
+      "tuple": {
+        "primary": "튜플",
+        "aliases": [
+          "터플",
+          "ㅌㅍ"
+        ]
+      },
+      "type": {
+        "primary": "종류",
+        "aliases": [
+          "별칭",
+          "타입"
+        ]
+      },
+      "zip": {
+        "primary": "묶기",
+        "aliases": [
+          "집",
+          "ㅁㄱ"
+        ]
+      }
+    },
+    "exceptions": {
+      "ArithmeticError": {
+        "primary": "산술오류",
+        "aliases": [
+          "산술에러",
+          "ㅅㅅㅇㄹ"
+        ]
+      },
+      "AssertionError": {
+        "primary": "단언오류",
+        "aliases": [
+          "단언에러",
+          "ㄷㅇㅇㄹ"
+        ]
+      },
+      "AttributeError": {
+        "primary": "속성오류",
+        "aliases": [
+          "속성에러"
+        ]
+      },
+      "BaseException": {
+        "primary": "최상위예외",
+        "aliases": [
+          "ㅊㅅㅇㅇㅇ"
+        ]
+      },
+      "BaseExceptionGroup": {
+        "primary": "최상위예외묶음",
+        "aliases": [
+          "ㅊㅅㅇㅇㅇㅁㅇ"
+        ]
+      },
+      "BlockingIOError": {
+        "primary": "입출력차단오류",
+        "aliases": [
+          "입출력차단에러",
+          "ㅇㅊㄹㅊㄷㅇㄹ"
+        ]
+      },
+      "BrokenPipeError": {
+        "primary": "파이프손상오류",
+        "aliases": [
+          "파이프손상에러",
+          "ㅍㅇㅍㅅㅅㅇㄹ"
+        ]
+      },
+      "BufferError": {
+        "primary": "버퍼오류",
+        "aliases": [
+          "버퍼에러",
+          "ㅂㅍㅇㄹ"
+        ]
+      },
+      "BytesWarning": {
+        "primary": "바이트경고",
+        "aliases": [
+          "바이트주의",
+          "ㅂㅇㅌㄱㄱ"
+        ]
+      },
+      "ChildProcessError": {
+        "primary": "자식프로세스오류",
+        "aliases": [
+          "자식프로세스에러",
+          "ㅈㅅㅍㄹㅅㅅㅇㄹ"
+        ]
+      },
+      "ConnectionAbortedError": {
+        "primary": "연결중단오류",
+        "aliases": [
+          "연결중단에러",
+          "ㅇㄱㅈㄷㅇㄹ"
+        ]
+      },
+      "ConnectionError": {
+        "primary": "연결오류",
+        "aliases": [
+          "연결에러",
+          "ㅇㄱㅇㄹ"
+        ]
+      },
+      "ConnectionRefusedError": {
+        "primary": "연결거부오류",
+        "aliases": [
+          "연결거부에러",
+          "ㅇㄱㄱㅂㅇㄹ"
+        ]
+      },
+      "ConnectionResetError": {
+        "primary": "연결재설정오류",
+        "aliases": [
+          "연결재설정에러",
+          "ㅇㄱㅈㅅㅈㅇㄹ"
+        ]
+      },
+      "DeprecationWarning": {
+        "primary": "사용중단경고",
+        "aliases": [
+          "사용중단주의",
+          "ㅅㅇㅈㄷㄱㄱ"
+        ]
+      },
+      "EOFError": {
+        "primary": "파일끝오류",
+        "aliases": [
+          "파일끝에러",
+          "ㅍㅇㄲㅇㄹ"
+        ]
+      },
+      "EncodingWarning": {
+        "primary": "인코딩경고",
+        "aliases": [
+          "인코딩주의",
+          "ㅇㅋㄷㄱㄱ"
+        ]
+      },
+      "EnvironmentError": {
+        "primary": "환경오류",
+        "aliases": [
+          "환경에러",
+          "ㅎㄱㅇㄹ"
+        ]
+      },
+      "Exception": {
+        "primary": "일반예외",
+        "aliases": [
+          "ㅇㅂㅇㅇ"
+        ]
+      },
+      "ExceptionGroup": {
+        "primary": "예외묶음",
+        "aliases": [
+          "ㅇㅇㅁㅇ"
+        ]
+      },
+      "FileExistsError": {
+        "primary": "파일존재오류",
+        "aliases": [
+          "파일존재에러",
+          "ㅍㅇㅈㅈㅇㄹ"
+        ]
+      },
+      "FileNotFoundError": {
+        "primary": "파일없음오류",
+        "aliases": [
+          "파일없음에러",
+          "ㅍㅇㅇㅇㅇㄹ"
+        ]
+      },
+      "FloatingPointError": {
+        "primary": "부동소수점오류",
+        "aliases": [
+          "부동소수점에러",
+          "ㅂㄷㅅㅅㅈㅇㄹ"
+        ]
+      },
+      "FutureWarning": {
+        "primary": "향후변경경고",
+        "aliases": [
+          "향후변경주의",
+          "ㅎㅎㅂㄱㄱㄱ"
+        ]
+      },
+      "GeneratorExit": {
+        "primary": "생성기종료",
+        "aliases": [
+          "생성기끝",
+          "ㅅㅅㄱㅈㄹ"
+        ]
+      },
+      "IOError": {
+        "primary": "입출력오류",
+        "aliases": [
+          "입출력에러",
+          "ㅇㅊㄹㅇㄹ"
+        ]
+      },
+      "ImportError": {
+        "primary": "가져오기오류",
+        "aliases": [
+          "가져오기에러",
+          "ㄱㅈㅇㄱㅇㄹ"
+        ]
+      },
+      "ImportWarning": {
+        "primary": "가져오기경고",
+        "aliases": [
+          "가져오기주의",
+          "ㄱㅈㅇㄱㄱㄱ"
+        ]
+      },
+      "IndentationError": {
+        "primary": "들여쓰기오류",
+        "aliases": [
+          "들여쓰기에러",
+          "ㄷㅇㅆㄱㅇㄹ"
+        ]
+      },
+      "IndexError": {
+        "primary": "색인오류",
+        "aliases": [
+          "색인에러",
+          "ㅅㅇㅇㄹ"
+        ]
+      },
+      "InterruptedError": {
+        "primary": "중단오류",
+        "aliases": [
+          "중단에러",
+          "ㅈㄷㅇㄹ"
+        ]
+      },
+      "IsADirectoryError": {
+        "primary": "디렉토리임오류",
+        "aliases": [
+          "디렉토리임에러",
+          "ㄷㄹㅌㄹㅇㅇㄹ"
+        ]
+      },
+      "KeyError": {
+        "primary": "키오류",
+        "aliases": [
+          "키에러",
+          "ㅋㅇㄹ"
+        ]
+      },
+      "KeyboardInterrupt": {
+        "primary": "키보드중단",
+        "aliases": [
+          "ㅋㅂㄷㅈㄷ"
+        ]
+      },
+      "LookupError": {
+        "primary": "조회오류",
+        "aliases": [
+          "조회에러",
+          "ㅈㅎㅇㄹ"
+        ]
+      },
+      "MemoryError": {
+        "primary": "메모리오류",
+        "aliases": [
+          "메모리에러",
+          "ㅁㅁㄹㅇㄹ"
+        ]
+      },
+      "ModuleNotFoundError": {
+        "primary": "모듈없음오류",
+        "aliases": [
+          "모듈없음에러",
+          "ㅁㄷㅇㅇㅇㄹ"
+        ]
+      },
+      "NameError": {
+        "primary": "이름오류",
+        "aliases": [
+          "이름에러",
+          "ㅇㄹㅇㄹ"
+        ]
+      },
+      "NotADirectoryError": {
+        "primary": "디렉토리아님오류",
+        "aliases": [
+          "디렉토리아님에러",
+          "ㄷㄹㅌㄹㅇㄴㅇㄹ"
+        ]
+      },
+      "NotImplementedError": {
+        "primary": "미구현오류",
+        "aliases": [
+          "미구현에러",
+          "ㅁㄱㅎㅇㄹ"
+        ]
+      },
+      "OSError": {
+        "primary": "운영체제오류",
+        "aliases": [
+          "운영체제에러",
+          "ㅇㅇㅊㅈㅇㄹ"
+        ]
+      },
+      "OverflowError": {
+        "primary": "범위초과오류",
+        "aliases": [
+          "범위초과에러",
+          "ㅂㅇㅊㄱㅇㄹ"
+        ]
+      },
+      "PendingDeprecationWarning": {
+        "primary": "사용중단예정경고",
+        "aliases": [
+          "사용중단예정주의",
+          "ㅅㅇㅈㄷㅇㅈㄱㄱ"
+        ]
+      },
+      "PermissionError": {
+        "primary": "권한오류",
+        "aliases": [
+          "권한에러",
+          "ㄱㅎㅇㄹ"
+        ]
+      },
+      "ProcessLookupError": {
+        "primary": "프로세스조회오류",
+        "aliases": [
+          "프로세스조회에러",
+          "ㅍㄹㅅㅅㅈㅎㅇㄹ"
+        ]
+      },
+      "PythonFinalizationError": {
+        "primary": "파이썬종료오류",
+        "aliases": [
+          "파이썬종료에러",
+          "ㅍㅇㅆㅈㄹㅇㄹ"
+        ]
+      },
+      "RecursionError": {
+        "primary": "재귀오류",
+        "aliases": [
+          "재귀에러",
+          "ㅈㄱㅇㄹ"
+        ]
+      },
+      "ReferenceError": {
+        "primary": "참조오류",
+        "aliases": [
+          "참조에러",
+          "ㅊㅈㅇㄹ"
+        ]
+      },
+      "ResourceWarning": {
+        "primary": "자원경고",
+        "aliases": [
+          "자원주의"
+        ]
+      },
+      "RuntimeError": {
+        "primary": "실행오류",
+        "aliases": [
+          "실행에러",
+          "ㅅㅎㅇㄹ"
+        ]
+      },
+      "RuntimeWarning": {
+        "primary": "실행경고",
+        "aliases": [
+          "실행주의",
+          "ㅅㅎㄱㄱ"
+        ]
+      },
+      "StopAsyncIteration": {
+        "primary": "비동기반복종료",
+        "aliases": [
+          "비동기반복끝",
+          "ㅂㄷㄱㅂㅂㅈㄹ"
+        ]
+      },
+      "StopIteration": {
+        "primary": "반복종료",
+        "aliases": [
+          "반복끝"
+        ]
+      },
+      "SyntaxError": {
+        "primary": "문법오류",
+        "aliases": [
+          "문법에러",
+          "ㅁㅂㅇㄹ"
+        ]
+      },
+      "SyntaxWarning": {
+        "primary": "문법경고",
+        "aliases": [
+          "문법주의",
+          "ㅁㅂㄱㄱ"
+        ]
+      },
+      "SystemError": {
+        "primary": "시스템오류",
+        "aliases": [
+          "시스템에러",
+          "ㅅㅅㅌㅇㄹ"
+        ]
+      },
+      "SystemExit": {
+        "primary": "시스템종료",
+        "aliases": [
+          "시스템끝",
+          "ㅅㅅㅌㅈㄹ"
+        ]
+      },
+      "TabError": {
+        "primary": "탭오류",
+        "aliases": [
+          "탭에러",
+          "ㅌㅇㄹ"
+        ]
+      },
+      "TimeoutError": {
+        "primary": "시간초과오류",
+        "aliases": [
+          "시간초과에러",
+          "ㅅㄱㅊㄱㅇㄹ"
+        ]
+      },
+      "TypeError": {
+        "primary": "자료형오류",
+        "aliases": [
+          "자료형에러",
+          "ㅈㄹㅎㅇㄹ"
+        ]
+      },
+      "UnboundLocalError": {
+        "primary": "지역변수연결오류",
+        "aliases": [
+          "지역변수연결에러",
+          "ㅈㅇㅂㅅㅇㄱㅇㄹ"
+        ]
+      },
+      "UnicodeDecodeError": {
+        "primary": "유니코드해독오류",
+        "aliases": [
+          "유니코드해독에러",
+          "ㅇㄴㅋㄷㅎㄷㅇㄹ"
+        ]
+      },
+      "UnicodeEncodeError": {
+        "primary": "유니코드부호화오류",
+        "aliases": [
+          "유니코드부호화에러",
+          "ㅇㄴㅋㄷㅂㅎㅎㅇㄹ"
+        ]
+      },
+      "UnicodeError": {
+        "primary": "유니코드오류",
+        "aliases": [
+          "유니코드에러",
+          "ㅇㄴㅋㄷㅇㄹ"
+        ]
+      },
+      "UnicodeTranslateError": {
+        "primary": "유니코드변환오류",
+        "aliases": [
+          "유니코드변환에러",
+          "ㅇㄴㅋㄷㅂㅎㅇㄹ"
+        ]
+      },
+      "UnicodeWarning": {
+        "primary": "유니코드경고",
+        "aliases": [
+          "유니코드주의",
+          "ㅇㄴㅋㄷㄱㄱ"
+        ]
+      },
+      "UserWarning": {
+        "primary": "사용자경고",
+        "aliases": [
+          "사용자주의",
+          "ㅅㅇㅈㄱㄱ"
+        ]
+      },
+      "ValueError": {
+        "primary": "값오류",
+        "aliases": [
+          "값에러",
+          "ㄱㅇㄹ"
+        ]
+      },
+      "Warning": {
+        "primary": "경고",
+        "aliases": [
+          "주의",
+          "ㄱㄱ"
+        ]
+      },
+      "ZeroDivisionError": {
+        "primary": "영나눗셈오류",
+        "aliases": [
+          "영나눗셈에러",
+          "ㅇㄴㄴㅅㅇㄹ"
+        ]
+      },
+      "_IncompleteInputError": {
+        "primary": "불완전입력오류",
+        "aliases": [
+          "불완전입력에러",
+          "ㅂㅇㅈㅇㄹㅇㄹ"
+        ]
+      }
+    },
+    "commonMethods": {
+      "append": {
+        "primary": "추가",
+        "aliases": [
+          "추가해",
+          "ㅊㄱ"
+        ]
+      },
+      "extend": {
+        "primary": "확장",
+        "aliases": [
+          "늘려",
+          "ㅎㅈ"
+        ]
+      },
+      "insert": {
+        "primary": "삽입",
+        "aliases": [
+          "끼워",
+          "ㅅㅇ"
+        ]
+      },
+      "remove": {
+        "primary": "제거",
+        "aliases": [
+          "빼"
+        ]
+      },
+      "pop": {
+        "primary": "꺼내기",
+        "aliases": [
+          "꺼내",
+          "ㄲㄴㄱ"
+        ]
+      },
+      "clear": {
+        "primary": "비우기",
+        "aliases": [
+          "비워",
+          "ㅂㅇㄱ"
+        ]
+      },
+      "index": {
+        "primary": "위치찾기",
+        "aliases": [
+          "위치",
+          "위치찾아",
+          "ㅇㅊㅊㄱ"
+        ]
+      },
+      "count": {
+        "primary": "개수세기",
+        "aliases": [
+          "개수",
+          "ㄱㅅㅅㄱ"
+        ]
+      },
+      "sort": {
+        "primary": "정렬",
+        "aliases": [
+          "ㅈㄹ_별칭"
+        ]
+      },
+      "reverse": {
+        "primary": "뒤집기",
+        "aliases": [
+          "뒤집어",
+          "ㄷㅈㄱ"
+        ]
+      },
+      "copy": {
+        "primary": "복사",
+        "aliases": [
+          "복사해",
+          "ㅂㅅ"
+        ]
+      },
+      "keys": {
+        "primary": "키목록",
+        "aliases": [
+          "키s",
+          "ㅋㅁㄹ"
+        ]
+      },
+      "values": {
+        "primary": "값목록",
+        "aliases": [
+          "값s",
+          "ㄱㅁㄹ"
+        ]
+      },
+      "items": {
+        "primary": "항목목록",
+        "aliases": [
+          "항목s",
+          "ㅎㅁㅁㄹ"
+        ]
+      },
+      "get": {
+        "primary": "가져오기",
+        "aliases": [
+          "가져와",
+          "ㄱㅈㅇㄱ"
+        ]
+      },
+      "update": {
+        "primary": "갱신",
+        "aliases": [
+          "새로고쳐"
+        ]
+      },
+      "setdefault": {
+        "primary": "기본값설정",
+        "aliases": [
+          "기본설정",
+          "기본값세팅",
+          "ㄱㅂㄱㅅㅈ"
+        ]
+      },
+      "add": {
+        "primary": "더하기",
+        "aliases": [
+          "더해",
+          "더",
+          "ㄷㅎㄱ"
+        ]
+      },
+      "discard": {
+        "primary": "버리기",
+        "aliases": [
+          "버려",
+          "ㅂㄹㄱ"
+        ]
+      },
+      "union": {
+        "primary": "합집합",
+        "aliases": [
+          "합쳐",
+          "ㅎㅈㅎ"
+        ]
+      },
+      "intersection": {
+        "primary": "교집합",
+        "aliases": [
+          "겹쳐",
+          "ㄱㅈㅎ"
+        ]
+      },
+      "difference": {
+        "primary": "차집합",
+        "aliases": [
+          "달라",
+          "ㅊㅈㅎ"
+        ]
+      },
+      "split": {
+        "primary": "나누기",
+        "aliases": [
+          "쪼개",
+          "나눠",
+          "ㄴㄴㄱ"
+        ]
+      },
+      "rsplit": {
+        "primary": "오른쪽나누기",
+        "aliases": [
+          "오른쪽쪼개",
+          "오른쪽나눠",
+          "ㅇㄹㅉㄴㄴㄱ"
+        ]
+      },
+      "join": {
+        "primary": "이어붙이기",
+        "aliases": [
+          "붙여",
+          "이어붙여",
+          "ㅇㅇㅂㅇㄱ"
+        ]
+      },
+      "strip": {
+        "primary": "양쪽공백제거",
+        "aliases": [
+          "다듬어",
+          "ㅇㅉㄱㅂㅈㄱ"
+        ]
+      },
+      "lstrip": {
+        "primary": "왼쪽공백제거",
+        "aliases": [
+          "왼쪽다듬어"
+        ]
+      },
+      "rstrip": {
+        "primary": "오른쪽공백제거",
+        "aliases": [
+          "오른쪽다듬어",
+          "ㅇㄹㅉㄱㅂㅈㄱ"
+        ]
+      },
+      "replace": {
+        "primary": "바꾸기",
+        "aliases": [
+          "ㅂㄲㄱ"
+        ]
+      },
+      "find": {
+        "primary": "찾기",
+        "aliases": [
+          "찾아"
+        ]
+      },
+      "rfind": {
+        "primary": "오른쪽찾기",
+        "aliases": [
+          "오른쪽찾아",
+          "ㅇㄹㅉㅊㄱ"
+        ]
+      },
+      "startswith": {
+        "primary": "시작확인",
+        "aliases": [
+          "시작하나",
+          "시작체크",
+          "ㅅㅈㅎㅇ"
+        ]
+      },
+      "endswith": {
+        "primary": "끝확인",
+        "aliases": [
+          "끝나나",
+          "끝체크",
+          "ㄲㅎㅇ"
+        ]
+      },
+      "lower": {
+        "primary": "소문자로",
+        "aliases": [
+          "소문자",
+          "ㅅㅁㅈㄹ"
+        ]
+      },
+      "upper": {
+        "primary": "대문자로",
+        "aliases": [
+          "대문자",
+          "ㄷㅁㅈㄹ"
+        ]
+      },
+      "format": {
+        "primary": "형식",
+        "aliases": [
+          "포맷",
+          "ㅎㅅ"
+        ]
+      },
+      "read": {
+        "primary": "읽기",
+        "aliases": [
+          "읽어"
+        ]
+      },
+      "readline": {
+        "primary": "한줄읽기",
+        "aliases": [
+          "한줄읽어",
+          "ㅎㅈㅇㄱ"
+        ]
+      },
+      "readlines": {
+        "primary": "여러줄읽기",
+        "aliases": [
+          "다읽어",
+          "여러줄읽어",
+          "ㅇㄹㅈㅇㄱ"
+        ]
+      },
+      "write": {
+        "primary": "쓰기",
+        "aliases": [
+          "써",
+          "ㅆㄱ"
+        ]
+      },
+      "writelines": {
+        "primary": "여러줄쓰기",
+        "aliases": [
+          "다써",
+          "여러줄써",
+          "ㅇㄹㅈㅆㄱ"
+        ]
+      },
+      "close": {
+        "primary": "닫기",
+        "aliases": [
+          "닫아",
+          "ㄷㄱ"
+        ]
+      }
+    },
+    "commonParameters": {
+      "end": {
+        "primary": "끝값",
+        "aliases": [
+          "마지막",
+          "ㄲㄱ"
+        ]
+      },
+      "sep": {
+        "primary": "구분자",
+        "aliases": [
+          "구분",
+          "ㄱㅂㅈ"
+        ]
+      },
+      "file": {
+        "primary": "파일",
+        "aliases": [
+          "대상파일",
+          "ㅍㅇ"
+        ]
+      },
+      "flush": {
+        "primary": "즉시비우기",
+        "aliases": [
+          "바로비워",
+          "즉시비워",
+          "ㅈㅅㅂㅇㄱ"
+        ]
+      },
+      "key": {
+        "primary": "키",
+        "aliases": [
+          "기준키",
+          "ㅋ"
+        ]
+      },
+      "reverse": {
+        "primary": "역순",
+        "aliases": [
+          "반대로",
+          "ㅇㅅ"
+        ]
+      },
+      "start": {
+        "primary": "시작",
+        "aliases": [
+          "처음"
+        ]
+      },
+      "stop": {
+        "primary": "정지",
+        "aliases": [
+          "멈출곳",
+          "ㅈㅈ"
+        ]
+      },
+      "step": {
+        "primary": "간격",
+        "aliases": [
+          "보폭"
+        ]
+      },
+      "encoding": {
+        "primary": "인코딩",
+        "aliases": [
+          "인코딩방식",
+          "ㅇㅋㄷ"
+        ]
+      },
+      "errors": {
+        "primary": "오류처리",
+        "aliases": [
+          "오류방식",
+          "ㅇㄹㅊㄹ"
+        ]
+      },
+      "newline": {
+        "primary": "줄바꿈",
+        "aliases": [
+          "개행",
+          "ㅈㅂㄲ"
+        ]
+      }
+    }
+  }
+}

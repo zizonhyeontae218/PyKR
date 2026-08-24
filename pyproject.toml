@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pykr-dialect"
+version = "1.0.0"
+description = "사용자 정의 한국어 Python 방언과 표준 Python의 양방향 변환기"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "gokon" }]
+keywords = ["python", "korean", "dialect", "source-to-source"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Operating System :: OS Independent",
+]
+
+[project.scripts]
+pykr = "pykr:main"
+
+[tool.setuptools]
+py-modules = ["pykr"]
+packages = ["Inverter", "Printer"]
+
+[tool.setuptools.data-files]
+"share/pykr" = ["GenderChange.Json"]
+"share/pykr/ExtensionPacks" = ["ExtensionPacks/OfficialExtensionPack.Json"]
